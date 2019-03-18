@@ -1,4 +1,4 @@
-# Application Name
+# Eat My Um-Ass
 
 Rename the above with the name of your application.
 
