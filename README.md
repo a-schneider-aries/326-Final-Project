@@ -12,7 +12,7 @@ Deliver food from anywhere on campus to dorms for students (dining halls, blue w
 # Team Members
 
 Annabel Schneider
-Matthew Brooks
+Matthew Brooks dumb
 Nicolas Fernandez
 Tiffany Lee
 
