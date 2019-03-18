@@ -4,7 +4,7 @@ Rename the above with the name of your application.
 
 # Overview
 
-Add an overview of your application here.
+Deliver food from anywhere on campus to dorms for students (dining halls, blue wall, etc)
 
 # Team Members
 
