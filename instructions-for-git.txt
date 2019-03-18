@@ -1,0 +1,4 @@
+to commit, you have to run this command:
+git commit -m "<>"
+        where <> is the name of your commit (like the changes you've done)
+then you can run git push or git pull
