@@ -1,4 +1,4 @@
-# Eat My Um-Ass
+# Eat My UMass
 
 Rename the above with the name of your application.
 
