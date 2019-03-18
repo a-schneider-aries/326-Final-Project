@@ -16,8 +16,6 @@ Matthew Brooks
 Nicolas Fernandez
 Tiffany Lee
 
-tEst
-
 # Application Initialization
 
 To use this application you should have `node` and `npm` installed and issue the following commands:
