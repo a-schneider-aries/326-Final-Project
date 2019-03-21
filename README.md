@@ -1,7 +1,7 @@
 # Eat My UMass
 
 Rename the above with the name of your application.
-check push check push 
+check push check push check push
 # Overview
 
 Our application allows UMass students to log-in with their student ID and use their campus meal plans (or UCard debit) to purchase food from on-campus locations and have it delivered to an on-campus address. Craving Sweets when you're cramming in the library at 11pm on a Tuesday? Hungry for Tamales but don't want to slip on the ice on Orchard Hill? For a busy college student, taking time out of their day to go get food (especially when it's snowy or it's UMass Plague Season) can be a hassle. Our goal is to help students save time and money, and keep UMass Dining #1!
