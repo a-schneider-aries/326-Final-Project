@@ -1,37 +1,39 @@
-import React, { Component } from "react";
-import { MDBBtn, MDBCollapse } from "mdbreact";
+//import { pbkdf2 } from "crypto";
 
-class CollapsePage extends Component {
-state = {
-  collapseID: ""
-}
+// This is a place holder for the initial application state.
+const state = [
 
-toggleCollapse = collapseID => () => {
-  this.setState(prevState => ({
-    collapseID: prevState.collapseID !== collapseID ? collapseID : ""
-  }));
-}
+];
 
-render() {
-  return (
-      <>
-        <MDBBtn color="primary" onClick={this.toggleCollapse("basicCollapse")} style={{ marginBottom: "1rem" }}>
-          Toggle1
-        </MDBBtn>
-        <MDBBtn color="info" onClick={this.toggleCollapse("basicCollapse")} style={{ marginBottom: "1rem" }}>
-          Toggle2
-        </MDBBtn>
-        <MDBCollapse id="basicCollapse" isOpen={this.state.collapseID}>
-          <p>
-            Anim pariatur cliche reprehenderit, enim eiusmod high life
-            accusamus terry richardson ad squid. Nihil anim keffiyeh
-            helvetica, craft beer labore wes anderson cred nesciunt sapiente
-            ea proident.
-          </p>
-        </MDBCollapse>
-      </>
+// This grabs the DOM element to be used to mount React components.
+var contentNode = document.getElementById("contents");
+
+class MyComponent extends React.Component {
+  constructor() {
+    super();
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Dining Locations and Their Food</h1>
+        <p1>Argo Tea\n
+        Baby Berk 1\n
+        Baby Berk 2\n
+        Berkshire Dining Common\n
+        Blue Wall\n
+        Chicken and Co.\n
+        Franklin Dining Common\n
+        Greenough Subs\n
+        Hampshire Dining Common\n
+        Procrastination Station\n
+        Roots Cafe\n
+        Sweets and More\n
+        Worcester Dining Common\n</p1>
+      </div>
     );
   }
 }
 
-export default CollapsePage('Baby Berk 1', 'Menu', 'Cheese Quesadilla ... $5.00 \n Tater Tots ... $2.50');
+// This renders the JSX component inside the content node:
+ReactDOM.render(<MyComponent />, contentNode);
