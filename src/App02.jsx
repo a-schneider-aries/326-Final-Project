@@ -1,4 +1,7 @@
 const carts = [
+  {
+    item: 'pizza'
+  }
 ];
 
 var contentNode = document.getElementById("contents");
