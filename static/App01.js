@@ -2,6 +2,8 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _crypto = require("crypto");
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
@@ -33,6 +35,61 @@ var MyComponent = function (_React$Component) {
           "h1",
           null,
           "Dining Locations and Their Food"
+        ),
+        React.createElement(
+          "p1",
+          null,
+          "Baby Berk 1"
+        ),
+        React.createElement(
+          "p2",
+          null,
+          "Baby Berk 2"
+        ),
+        React.createElement(
+          "p3",
+          null,
+          "Berkshire Dining Common "
+        ),
+        React.createElement(
+          "p4",
+          null,
+          "Blue Wall"
+        ),
+        React.createElement(
+          "p5",
+          null,
+          "Franklin Dining Common"
+        ),
+        React.createElement(
+          "p6",
+          null,
+          "Greenough Subs"
+        ),
+        React.createElement(
+          "p7",
+          null,
+          "Hampshire Dining Common"
+        ),
+        React.createElement(
+          "p8",
+          null,
+          "Procrastination Station"
+        ),
+        React.createElement(
+          "p9",
+          null,
+          "Roots Cafe"
+        ),
+        React.createElement(
+          "p10",
+          null,
+          "Sweets and More"
+        ),
+        React.createElement(
+          "p11",
+          null,
+          "Worcester Dining Common"
         )
       );
     }
