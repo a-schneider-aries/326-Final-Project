@@ -41,6 +41,12 @@ import { MDBBtn, MDBCollapse } from "mdbreact";
 
 class CollapsePage extends Component {
 
+toggleCollapse = collapseID => () => {
+  this.setState(prevState => ({
+    collapseID: prevState.collapseID !== collapseID ? collapseID : ""
+  }));
+}
+
 render() {
   return (
       <>
