@@ -32,20 +32,13 @@ var CartFilter = function (_React$Component) {
 }(React.Component);
 
 var MenuRow = function MenuRow(props) {
-  return React.createElement(
-    "tr",
-    null,
-    React.createElement(
-      "td",
-      null,
-      props.cart.item
-    )
-  );
+  return React.createElement("tr", null);
 };
+// props.cart.item}
 
 function MenuTable(props) {
   var CartRows = props.carts.map(function (cart) {
-    return React.createElement(CartRow, { key: cart.item, cart: cart });
+    return React.createElement(MenuRow, { key: "nothing", cart: cart });
   });
   return React.createElement(
     "table",
@@ -60,6 +53,31 @@ function MenuTable(props) {
           "th",
           null,
           "Menu"
+        ),
+        React.createElement(
+          "td",
+          null,
+          "chicken"
+        ),
+        React.createElement(
+          "td",
+          null,
+          "Meat"
+        ),
+        React.createElement(
+          "td",
+          null,
+          "Goat"
+        ),
+        React.createElement(
+          "td",
+          null,
+          "Beef"
+        ),
+        React.createElement(
+          "td",
+          null,
+          "Taco"
         )
       )
     ),
