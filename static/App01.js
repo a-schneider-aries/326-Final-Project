@@ -37,57 +37,67 @@ var MyComponent = function (_React$Component) {
           "Dining Locations and Their Food"
         ),
         React.createElement(
-          "p1",
+          "div",
+          null,
+          "Argo Tea"
+        ),
+        React.createElement(
+          "div",
           null,
           "Baby Berk 1"
         ),
         React.createElement(
-          "p2",
+          "div",
           null,
           "Baby Berk 2"
         ),
         React.createElement(
-          "p3",
+          "div",
           null,
-          "Berkshire Dining Common "
+          "Berkshire Dining Common"
         ),
         React.createElement(
-          "p4",
+          "div",
           null,
           "Blue Wall"
         ),
         React.createElement(
-          "p5",
+          "div",
+          null,
+          "Chicken and Co."
+        ),
+        React.createElement(
+          "div",
           null,
           "Franklin Dining Common"
         ),
         React.createElement(
-          "p6",
+          "div",
           null,
-          "Greenough Subs"
+          "Greenough Sub Shop"
         ),
         React.createElement(
-          "p7",
+          "div",
           null,
           "Hampshire Dining Common"
         ),
         React.createElement(
-          "p8",
+          "div",
           null,
           "Procrastination Station"
         ),
         React.createElement(
-          "p9",
+          "div",
           null,
           "Roots Cafe"
         ),
         React.createElement(
-          "p10",
+          "div",
           null,
           "Sweets and More"
         ),
         React.createElement(
-          "p11",
+          "div",
           null,
           "Worcester Dining Common"
         )

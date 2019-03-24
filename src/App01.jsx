@@ -17,17 +17,19 @@ class MyComponent extends React.Component {
     return (
       <div>
         <h1>Dining Locations and Their Food</h1>
-        <p1>Baby Berk 1</p1>
-        <p2>Baby Berk 2</p2>
-        <p3>Berkshire Dining Common </p3>
-        <p4>Blue Wall</p4>
-        <p5>Franklin Dining Common</p5>
-        <p6>Greenough Subs</p6>
-        <p7>Hampshire Dining Common</p7>
-        <p8>Procrastination Station</p8>
-        <p9>Roots Cafe</p9>
-        <p10>Sweets and More</p10>
-        <p11>Worcester Dining Common</p11>
+        <div>Argo Tea</div>
+        <div>Baby Berk 1</div>
+        <div>Baby Berk 2</div>
+        <div>Berkshire Dining Common</div>
+        <div>Blue Wall</div>
+        <div>Chicken and Co.</div>
+        <div>Franklin Dining Common</div>
+        <div>Greenough Sub Shop</div>
+        <div>Hampshire Dining Common</div>
+        <div>Procrastination Station</div>
+        <div>Roots Cafe</div>
+        <div>Sweets and More</div>
+        <div>Worcester Dining Common</div>
       </div>
     );
   }
