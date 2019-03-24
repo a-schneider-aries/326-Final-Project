@@ -14,20 +14,24 @@ class CartFilter extends React.Component {
 
 const MenuRow = (props) => (
   <tr>
-    <td>{props.cart.item}</td>
   </tr>
 );
-
+// props.cart.item}
 
 function MenuTable(props) {
   const CartRows = props.carts.map(cart => (
-    <CartRow key={cart.item} cart={cart} />
+    <MenuRow key={"nothing"} cart={cart} />
   ));
   return (
     <table className="bordered-table">
       <thead>
         <tr>
           <th>Menu</th>
+          <td>chicken</td>
+          <td>Meat</td>
+          <td>Goat</td>
+          <td>Beef</td>
+          <td>Taco</td>
         </tr>
       </thead>
       <tbody>{CartRows}</tbody>
