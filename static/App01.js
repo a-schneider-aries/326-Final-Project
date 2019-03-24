@@ -39,7 +39,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p1",
           null,
-          "Argo Tea Baby Berk 1 Baby Berk 2 Berkshire Dining Common Blue Wall Chicken and Co. Franklin Dining Common Greenough Subs Hampshire Dining Common Procrastination Station Roots Cafe Sweets and More Worcester Dining Common"
+          "Argo Tea\\ Baby Berk 1\\ Baby Berk 2\\ Berkshire Dining Common\\ Blue Wall\\ Chicken and Co.\\ Franklin Dining Common\\ Greenough Subs\\ Hampshire Dining Common\\ Procrastination Station\\ Roots Cafe\\ Sweets and More\\ Worcester Dining Common"
         )
       );
     }
