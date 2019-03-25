@@ -39,67 +39,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "div",
           null,
-          "Argo Tea"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Baby Berk 1"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Baby Berk 2"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Berkshire Dining Common"
-        ),
-        React.createElement(
-          "div",
-          null,
           "Blue Wall"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Chicken and Co."
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Franklin Dining Common"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Greenough Sub Shop"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Hampshire Dining Common"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Procrastination Station"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Roots Cafe"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Sweets and More"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Worcester Dining Common"
         )
       );
     }
