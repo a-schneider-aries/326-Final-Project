@@ -1,6 +1,6 @@
 const carts = [
   {
-    item: 'pizza'
+    item: ''
   }
 ];
 
