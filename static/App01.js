@@ -39,67 +39,102 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "div",
           null,
-          "Argo Tea"
+          "Bamboo"
+        ),
+        React.createElement(
+          "p1",
+          null,
+          "Authentic dim sum selections and hot plates."
         ),
         React.createElement(
           "div",
           null,
-          "Baby Berk 1"
+          "Deli Delish"
+        ),
+        React.createElement(
+          "p2",
+          null,
+          "Hot and cold grinders featuring house-roasted turkey and roast beef."
         ),
         React.createElement(
           "div",
           null,
-          "Baby Berk 2"
+          "Green Fields"
+        ),
+        React.createElement(
+          "p3",
+          null,
+          "Freshly tossed salads made to-order with locally sourced ingredients."
         ),
         React.createElement(
           "div",
           null,
-          "Berkshire Dining Common"
+          "The Grill"
+        ),
+        React.createElement(
+          "p4",
+          null,
+          "Classic American fare ranging from burgers to chicken tenders to milkshakes."
         ),
         React.createElement(
           "div",
           null,
-          "Blue Wall"
+          "Paciugo"
+        ),
+        React.createElement(
+          "p5",
+          null,
+          "A selection of smooth, all-natural gelato."
         ),
         React.createElement(
           "div",
           null,
-          "Chicken and Co."
+          "Star Ginger"
+        ),
+        React.createElement(
+          "p6",
+          null,
+          "Pho noodle bowls, rice bowls, and authentic Korean bibimbap."
         ),
         React.createElement(
           "div",
           null,
-          "Franklin Dining Common"
+          "Tamales"
+        ),
+        React.createElement(
+          "p7",
+          null,
+          "Burritos, bowls, and salads made to-order."
         ),
         React.createElement(
           "div",
           null,
-          "Greenough Sub Shop"
+          "Tavola"
+        ),
+        React.createElement(
+          "p8",
+          null,
+          "Classic Mediterranean fare including hummus bowls, pizza, and pasta."
         ),
         React.createElement(
           "div",
           null,
-          "Hampshire Dining Common"
+          "Wasabi"
+        ),
+        React.createElement(
+          "p9",
+          null,
+          "Sushi made with sustainably sourced fish, miso soup, and the like."
         ),
         React.createElement(
           "div",
           null,
-          "Procrastination Station"
+          "Yum! Bakery"
         ),
         React.createElement(
-          "div",
+          "p10",
           null,
-          "Roots Cafe"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Sweets and More"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Worcester Dining Common"
+          "Freshly baked goods including cookies, cakes, and French macaroons."
         )
       );
     }
