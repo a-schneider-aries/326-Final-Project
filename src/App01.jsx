@@ -17,7 +17,6 @@ class MyComponent extends React.Component {
     return (
       <div>
         <h1>Dining Locations and Their Food</h1>
-<<<<<<< HEAD
         <div>Bamboo</div>
         <p1>Authentic dim sum selections and hot plates.</p1>
         <div>Deli Delish</div>
@@ -38,21 +37,7 @@ class MyComponent extends React.Component {
         <p9>Sushi made with sustainably sourced fish, miso soup, and the like.</p9>
         <div>Yum! Bakery</div>
         <p10>Freshly baked goods including cookies, cakes, and French macaroons.</p10>
-=======
-        {/* <div>Argo Tea</div> */}
-        {/* <div>Baby Berk 1</div> */}
-        {/* <div>Baby Berk 2</div> */}
-        {/* <div>Berkshire Dining Common</div> */}
-        <div>Blue Wall</div>
-        {/* <div>Chicken and Co.</div> */}
-        {/* <div>Franklin Dining Common</div> */}
-        {/* <div>Greenough Sub Shop</div> */}
-        {/* <div>Hampshire Dining Common</div> */}
-        {/* <div>Procrastination Station</div> */}
-        {/* <div>Roots Cafe</div> */}
-        {/* <div>Sweets and More</div> */}
-        {/* <div>Worcester Dining Common</div> */}
->>>>>>> 9df79084e81f25e4bdadb0d8065db900e93a781f
+
       </div>
     );
   }
