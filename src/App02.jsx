@@ -1,4 +1,7 @@
 const carts = [
+  {
+    item: ''
+  }
 ];
 
 var contentNode = document.getElementById("contents");
