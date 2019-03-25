@@ -39,6 +39,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "div",
           null,
+<<<<<<< HEAD
           "Bamboo"
         ),
         React.createElement(
@@ -135,6 +136,9 @@ var MyComponent = function (_React$Component) {
           "p10",
           null,
           "Freshly baked goods including cookies, cakes, and French macaroons."
+=======
+          "Blue Wall"
+>>>>>>> 9df79084e81f25e4bdadb0d8065db900e93a781f
         )
       );
     }
