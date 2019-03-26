@@ -31,7 +31,11 @@ var Bamboo = function (_React$Component) {
       return React.createElement(
         "div",
         null,
-        "Bamboo"
+        React.createElement(
+          "p11",
+          null,
+          "Bamboo"
+        )
       );
     }
   }]);
@@ -54,7 +58,11 @@ var DeliDelish = function (_React$Component2) {
       return React.createElement(
         "div",
         null,
-        "Deli Delish"
+        React.createElement(
+          "p12",
+          null,
+          "Deli Delish"
+        )
       );
     }
   }]);
@@ -77,7 +85,11 @@ var GreenFields = function (_React$Component3) {
       return React.createElement(
         "div",
         null,
-        "Green Fields"
+        React.createElement(
+          "p13",
+          null,
+          "Green Fields"
+        )
       );
     }
   }]);
@@ -100,7 +112,11 @@ var Grill = function (_React$Component4) {
       return React.createElement(
         "div",
         null,
-        "The Grill"
+        React.createElement(
+          "p14",
+          null,
+          "The Grill"
+        )
       );
     }
   }]);
@@ -123,7 +139,11 @@ var Paciugo = function (_React$Component5) {
       return React.createElement(
         "div",
         null,
-        "Paciugo"
+        React.createElement(
+          "p15",
+          null,
+          "Paciugo"
+        )
       );
     }
   }]);
@@ -146,7 +166,11 @@ var StarGinger = function (_React$Component6) {
       return React.createElement(
         "div",
         null,
-        "Star Ginger"
+        React.createElement(
+          "p16",
+          null,
+          "Star Ginger"
+        )
       );
     }
   }]);
@@ -169,7 +193,11 @@ var Tamales = function (_React$Component7) {
       return React.createElement(
         "div",
         null,
-        "Tamales"
+        React.createElement(
+          "p17",
+          null,
+          "Tamales"
+        )
       );
     }
   }]);
@@ -192,7 +220,11 @@ var Tavola = function (_React$Component8) {
       return React.createElement(
         "div",
         null,
-        "Tavola"
+        React.createElement(
+          "p18",
+          null,
+          "Tavola"
+        )
       );
     }
   }]);
@@ -215,7 +247,11 @@ var Wasabi = function (_React$Component9) {
       return React.createElement(
         "div",
         null,
-        "Wasabi"
+        React.createElement(
+          "p19",
+          null,
+          "Wasabi"
+        )
       );
     }
   }]);
@@ -238,7 +274,11 @@ var Yum = function (_React$Component10) {
       return React.createElement(
         "div",
         null,
-        "Yum! Bakery"
+        React.createElement(
+          "p20",
+          null,
+          "Yum! Bakery"
+        )
       );
     }
   }]);
