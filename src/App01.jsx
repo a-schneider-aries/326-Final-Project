@@ -8,6 +8,36 @@ const state = [
 // This grabs the DOM element to be used to mount React components.
 var contentNode = document.getElementById("contents");
 
+class Example extends Component {
+  constructor(props) {
+    super(props);
+    this.toggle = this.toggle.bind(this);
+    this.state = { collapse: false };
+  }
+
+  toggle() {
+    this.setState(state => ({ collapse: !state.collapse }));
+  }
+
+  render() {
+    return (
+      <div>
+        <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
+        <Collapse isOpen={this.state.collapse}>
+          <Card>
+            <CardBody>
+            Anim pariatur cliche reprehenderit,
+             enim eiusmod high life accusamus terry richardson ad squid. Nihil
+             anim keffiyeh helvetica, craft beer labore wes anderson cred
+             nesciunt sapiente ea proident.
+            </CardBody>
+          </Card>
+        </Collapse>
+      </div>
+    );
+  }
+}
+
 class MyComponent extends React.Component {
   constructor() {
     super();
@@ -37,7 +67,6 @@ class MyComponent extends React.Component {
         <p>Sushi made with sustainably sourced fish, miso soup, and the like.</p>
         <div><h1>Yum! Bakery</h1></div>
         <p>Freshly baked goods including cookies, cakes, and French macaroons.</p>
-
       </div>
     );
   }

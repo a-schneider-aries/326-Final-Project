@@ -16,6 +16,57 @@ var state = [];
 // This grabs the DOM element to be used to mount React components.
 var contentNode = document.getElementById("contents");
 
+var Example = function (_Component) {
+  _inherits(Example, _Component);
+
+  function Example(props) {
+    _classCallCheck(this, Example);
+
+    var _this = _possibleConstructorReturn(this, (Example.__proto__ || Object.getPrototypeOf(Example)).call(this, props));
+
+    _this.toggle = _this.toggle.bind(_this);
+    _this.state = { collapse: false };
+    return _this;
+  }
+
+  _createClass(Example, [{
+    key: "toggle",
+    value: function toggle() {
+      this.setState(function (state) {
+        return { collapse: !state.collapse };
+      });
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        React.createElement(
+          Button,
+          { color: "primary", onClick: this.toggle, style: { marginBottom: '1rem' } },
+          "Toggle"
+        ),
+        React.createElement(
+          Collapse,
+          { isOpen: this.state.collapse },
+          React.createElement(
+            Card,
+            null,
+            React.createElement(
+              CardBody,
+              null,
+              "Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident."
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return Example;
+}(Component);
+
 var MyComponent = function (_React$Component) {
   _inherits(MyComponent, _React$Component);
 
