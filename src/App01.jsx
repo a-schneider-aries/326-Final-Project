@@ -1,144 +1,47 @@
 //import { pbkdf2 } from "crypto";
 
+// This is a place holder for the initial application state.
+const state = [
+
+];
+
+// This grabs the DOM element to be used to mount React components.
+var contentNode = document.getElementById("contents");
+
 class MyComponent extends React.Component {
   constructor() {
     super();
   }
 
-  toggle(e) {
-    console.log('testing e', e)
-    if (e.target.class === 'collapse') {
-      e.target.className = 'collapse.in'
-    } else {
-      e.target.className = 'collapse'
-    }
+  render() {
+    return (
+      <div>
+        <h1>Dining Locations and Their Food</h1>
+        <div>Bamboo</div>
+        <p1>    Authentic dim sum selections and hot plates.</p1>
+        <div>Deli Delish</div>
+        <p2>    Hot and cold grinders featuring house-roasted turkey and roast beef.</p2>
+        <div>Green Fields</div>
+        <p3>    Freshly tossed salads made to-order with locally sourced ingredients.</p3>
+        <div>The Grill</div>
+        <p4>    Classic American fare ranging from burgers to chicken tenders to milkshakes.</p4>
+        <div>Paciugo</div>
+        <p5>    A selection of smooth, all-natural gelato.</p5>
+        <div>Star Ginger</div>
+        <p6>    Pho noodle bowls, rice bowls, and authentic Korean bibimbap.</p6>
+        <div>Tamales</div>
+        <p7>    Burritos, bowls, and salads made to-order.</p7>
+        <div>Tavola</div>
+        <p8>    Classic Mediterranean fare including hummus bowls, pizza, and pasta.</p8>
+        <div>Wasabi</div>
+        <p9>    Sushi made with sustainably sourced fish, miso soup, and the like.</p9>
+        <div>Yum! Bakery</div>
+        <p10>   Freshly baked goods including cookies, cakes, and French macaroons.</p10>
+
+      </div>
+    );
   }
-render(){
-  return (
-    <div className="cart">
-     <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('bamboo')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Bamboo
-     </button>
-      <div id="bamboo" className="collapse">
-        <div>
-          
-            A freshly prepared selection of authentic dim sum and hot plates.
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('deli delish')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Deli Delish
-     </button>
-      <div id="deli delish" className="collapse">
-        <div>
-          
-            Hot and cold sandwiches and rolls prepared with a variety of ingredients, including house-roasted turkey and roast beef
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('green fields')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Green Fields
-     </button>
-      <div id="green fields" className="collapse">
-        <div>
-          
-            A variety of salads tossed to-order with locally sourced ingredients. 
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('paciugo')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Paciugo
-     </button>
-      <div id="paciugo" className="collapse">
-        <div>
-          
-            Smooth, traditionally crafted Italian gelato made from fresh, all-natural ingredients.
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('star ginger')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Star Ginger
-     </button>
-      <div id="star ginger" className="collapse">
-        <div>
-          
-            Authentic Vietnamese, Thai, and Korean specialties, including pho, rice bowls, and bibimbap.
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('tamales')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Tamales
-     </button>
-      <div id="tamales" className="collapse">
-        <div>
-          
-            Burritos, burrito bowls, and salads made to-order with fresh, sustainably-sourced ingredients.
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('tavola')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Tavola
-     </button>
-      <div id="tavola" className="collapse">
-        <div>
-          
-            Classic Mediterannean specialties including pizza, pasta, and hummus bowls.
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('wasabi')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Wasabi
-     </button>
-      <div id="wasabi" className="collapse">
-        <div>
-          
-            A selection of sushi made with sustainably sourced seafood, as well as other authentic Japanese offerings.
-        
-        </div>
-      </div>
-      <button className="btn btn-block" onClick={() => {
-                          this.toggle.bind('yum')
-                          //console.log('testing=this.state.open ', this.state.open);
-                      }}>
-                         Yum! Bakery
-     </button>
-      <div id="yum" className="collapse">
-        <div>
-          
-            Full-service bakery offering homemade cookies, brownies, and seasonal specialties.
-        
-        </div>
-      </div>
-    </div>
-  );
 }
 
-};
-
-ReactDOM.render(
-<MyComponent  />, document.getElementById('MyComponent')
-);
+// This renders the JSX component inside the content node:
+ReactDOM.render(<MyComponent />, contentNode);
