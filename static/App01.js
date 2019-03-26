@@ -39,100 +39,140 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "div",
           null,
-          "Bamboo"
+          React.createElement(
+            "h1",
+            null,
+            "Bamboo"
+          )
         ),
         React.createElement(
-          "p1",
+          "p",
           null,
           "Authentic dim sum selections and hot plates."
         ),
         React.createElement(
           "div",
           null,
-          "Deli Delish"
+          React.createElement(
+            "h1",
+            null,
+            "Deli Delish"
+          )
         ),
         React.createElement(
-          "p2",
+          "p",
           null,
           "Hot and cold grinders featuring house-roasted turkey and roast beef."
         ),
         React.createElement(
           "div",
           null,
-          "Green Fields"
+          React.createElement(
+            "h1",
+            null,
+            "Green Fields"
+          )
         ),
         React.createElement(
-          "p3",
+          "p",
           null,
           "Freshly tossed salads made to-order with locally sourced ingredients."
         ),
         React.createElement(
           "div",
           null,
-          "The Grill"
+          React.createElement(
+            "h1",
+            null,
+            "The Grill"
+          )
         ),
         React.createElement(
-          "p4",
+          "p",
           null,
           "Classic American fare ranging from burgers to chicken tenders to milkshakes."
         ),
         React.createElement(
           "div",
           null,
-          "Paciugo"
+          React.createElement(
+            "h1",
+            null,
+            "Paciugo"
+          )
         ),
         React.createElement(
-          "p5",
+          "p",
           null,
           "A selection of smooth, all-natural gelato."
         ),
         React.createElement(
           "div",
           null,
-          "Star Ginger"
+          React.createElement(
+            "h1",
+            null,
+            "Star Ginger"
+          )
         ),
         React.createElement(
-          "p6",
+          "p",
           null,
           "Pho noodle bowls, rice bowls, and authentic Korean bibimbap."
         ),
         React.createElement(
           "div",
           null,
-          "Tamales"
+          React.createElement(
+            "h1",
+            null,
+            "Tamales"
+          )
         ),
         React.createElement(
-          "p7",
+          "p",
           null,
           "Burritos, bowls, and salads made to-order."
         ),
         React.createElement(
           "div",
           null,
-          "Tavola"
+          React.createElement(
+            "h1",
+            null,
+            "Tavola"
+          )
         ),
         React.createElement(
-          "p8",
+          "p",
           null,
           "Classic Mediterranean fare including hummus bowls, pizza, and pasta."
         ),
         React.createElement(
           "div",
           null,
-          "Wasabi"
+          React.createElement(
+            "h1",
+            null,
+            "Wasabi"
+          )
         ),
         React.createElement(
-          "p9",
+          "p",
           null,
           "Sushi made with sustainably sourced fish, miso soup, and the like."
         ),
         React.createElement(
           "div",
           null,
-          "Yum! Bakery"
+          React.createElement(
+            "h1",
+            null,
+            "Yum! Bakery"
+          )
         ),
         React.createElement(
-          "p10",
+          "p",
           null,
           "Freshly baked goods including cookies, cakes, and French macaroons."
         )
