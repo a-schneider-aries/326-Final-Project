@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -10,6 +10,12 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 //import { pbkdf2 } from "crypto";
 
+// This is a place holder for the initial application state.
+var state = [];
+
+// This grabs the DOM element to be used to mount React components.
+var contentNode = document.getElementById("contents");
+
 var MyComponent = function (_React$Component) {
   _inherits(MyComponent, _React$Component);
 
@@ -20,175 +26,115 @@ var MyComponent = function (_React$Component) {
   }
 
   _createClass(MyComponent, [{
-    key: 'toggle',
-    value: function toggle(e) {
-      console.log('testing e', e);
-      if (e.target.class === 'collapse') {
-        e.target.className = 'collapse.in';
-      } else {
-        e.target.className = 'collapse';
-      }
-    }
-  }, {
-    key: 'render',
+    key: "render",
     value: function render() {
-      var _this2 = this;
-
       return React.createElement(
-        'div',
-        { className: 'cart' },
+        "div",
+        null,
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('bamboo');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Bamboo'
+          "h1",
+          null,
+          "Dining Locations and Their Food"
         ),
         React.createElement(
-          'div',
-          { id: 'bamboo', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'A freshly prepared selection of authentic dim sum and hot plates.'
-          )
+          "div",
+          null,
+          "Bamboo"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('deli delish');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Deli Delish'
+          "p1",
+          null,
+          "    Authentic dim sum selections and hot plates."
         ),
         React.createElement(
-          'div',
-          { id: 'deli delish', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Hot and cold sandwiches and rolls prepared with a variety of ingredients, including house-roasted turkey and roast beef'
-          )
+          "div",
+          null,
+          "Deli Delish"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('green fields');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Green Fields'
+          "p2",
+          null,
+          "    Hot and cold grinders featuring house-roasted turkey and roast beef."
         ),
         React.createElement(
-          'div',
-          { id: 'green fields', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'A variety of salads tossed to-order with locally sourced ingredients.'
-          )
+          "div",
+          null,
+          "Green Fields"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('paciugo');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Paciugo'
+          "p3",
+          null,
+          "    Freshly tossed salads made to-order with locally sourced ingredients."
         ),
         React.createElement(
-          'div',
-          { id: 'paciugo', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Smooth, traditionally crafted Italian gelato made from fresh, all-natural ingredients.'
-          )
+          "div",
+          null,
+          "The Grill"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('star ginger');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Star Ginger'
+          "p4",
+          null,
+          "    Classic American fare ranging from burgers to chicken tenders to milkshakes."
         ),
         React.createElement(
-          'div',
-          { id: 'star ginger', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Authentic Vietnamese, Thai, and Korean specialties, including pho, rice bowls, and bibimbap.'
-          )
+          "div",
+          null,
+          "Paciugo"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('tamales');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Tamales'
+          "p5",
+          null,
+          "    A selection of smooth, all-natural gelato."
         ),
         React.createElement(
-          'div',
-          { id: 'tamales', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Burritos, burrito bowls, and salads made to-order with fresh, sustainably-sourced ingredients.'
-          )
+          "div",
+          null,
+          "Star Ginger"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('tavola');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Tavola'
+          "p6",
+          null,
+          "    Pho noodle bowls, rice bowls, and authentic Korean bibimbap."
         ),
         React.createElement(
-          'div',
-          { id: 'tavola', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Classic Mediterannean specialties including pizza, pasta, and hummus bowls.'
-          )
+          "div",
+          null,
+          "Tamales"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('wasabi');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Wasabi'
+          "p7",
+          null,
+          "    Burritos, bowls, and salads made to-order."
         ),
         React.createElement(
-          'div',
-          { id: 'wasabi', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'A selection of sushi made with sustainably sourced seafood, as well as other authentic Japanese offerings.'
-          )
+          "div",
+          null,
+          "Tavola"
         ),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('yum');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Yum! Bakery'
+          "p8",
+          null,
+          "    Classic Mediterranean fare including hummus bowls, pizza, and pasta."
         ),
         React.createElement(
-          'div',
-          { id: 'yum', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Full-service bakery offering homemade cookies, brownies, and seasonal specialties.'
-          )
+          "div",
+          null,
+          "Wasabi"
+        ),
+        React.createElement(
+          "p9",
+          null,
+          "    Sushi made with sustainably sourced fish, miso soup, and the like."
+        ),
+        React.createElement(
+          "div",
+          null,
+          "Yum! Bakery"
+        ),
+        React.createElement(
+          "p10",
+          null,
+          "   Freshly baked goods including cookies, cakes, and French macaroons."
         )
       );
     }
@@ -197,6 +143,7 @@ var MyComponent = function (_React$Component) {
   return MyComponent;
 }(React.Component);
 
-;
+// This renders the JSX component inside the content node:
 
-ReactDOM.render(React.createElement(MyComponent, null), document.getElementById('MyComponent'));
+
+ReactDOM.render(React.createElement(MyComponent, null), contentNode);
