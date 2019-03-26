@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 // //import { pbkdf2 } from "crypto";
 
 // // This is a place holder for the initial application state.
@@ -79,6 +80,9 @@
 "use strict";
 =======
 'use strict';
+=======
+"use strict";
+>>>>>>> b065d76c7dd0ff5d0712a5be57f623ee9385b681
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -90,194 +94,343 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 //import { pbkdf2 } from "crypto";
 
-var MyComponent = function (_React$Component) {
-  _inherits(MyComponent, _React$Component);
+// This is a place holder for the initial application state.
+var state = [];
 
-  function MyComponent() {
-    _classCallCheck(this, MyComponent);
+// This grabs the DOM element to be used to mount React components.
+var contentNode = document.getElementById("contents");
 
-    return _possibleConstructorReturn(this, (MyComponent.__proto__ || Object.getPrototypeOf(MyComponent)).call(this));
+var Bamboo = function (_React$Component) {
+  _inherits(Bamboo, _React$Component);
+
+  function Bamboo() {
+    _classCallCheck(this, Bamboo);
+
+    return _possibleConstructorReturn(this, (Bamboo.__proto__ || Object.getPrototypeOf(Bamboo)).apply(this, arguments));
   }
 
-  _createClass(MyComponent, [{
-    key: 'toggle',
-    value: function toggle(e) {
-      console.log('testing e', e);
-      if (e.target.class === 'collapse') {
-        e.target.className = 'collapse.in';
-      } else {
-        e.target.className = 'collapse';
-      }
-    }
-  }, {
-    key: 'render',
+  _createClass(Bamboo, [{
+    key: "render",
     value: function render() {
-      var _this2 = this;
-
       return React.createElement(
-        'div',
-        { className: 'cart' },
+        "div",
+        null,
+        "Bamboo"
+      );
+    }
+  }]);
+
+  return Bamboo;
+}(React.Component);
+
+var DeliDelish = function (_React$Component2) {
+  _inherits(DeliDelish, _React$Component2);
+
+  function DeliDelish() {
+    _classCallCheck(this, DeliDelish);
+
+    return _possibleConstructorReturn(this, (DeliDelish.__proto__ || Object.getPrototypeOf(DeliDelish)).apply(this, arguments));
+  }
+
+  _createClass(DeliDelish, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Deli Delish"
+      );
+    }
+  }]);
+
+  return DeliDelish;
+}(React.Component);
+
+var GreenFields = function (_React$Component3) {
+  _inherits(GreenFields, _React$Component3);
+
+  function GreenFields() {
+    _classCallCheck(this, GreenFields);
+
+    return _possibleConstructorReturn(this, (GreenFields.__proto__ || Object.getPrototypeOf(GreenFields)).apply(this, arguments));
+  }
+
+  _createClass(GreenFields, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Green Fields"
+      );
+    }
+  }]);
+
+  return GreenFields;
+}(React.Component);
+
+var Grill = function (_React$Component4) {
+  _inherits(Grill, _React$Component4);
+
+  function Grill() {
+    _classCallCheck(this, Grill);
+
+    return _possibleConstructorReturn(this, (Grill.__proto__ || Object.getPrototypeOf(Grill)).apply(this, arguments));
+  }
+
+  _createClass(Grill, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "The Grill"
+      );
+    }
+  }]);
+
+  return Grill;
+}(React.Component);
+
+var Paciugo = function (_React$Component5) {
+  _inherits(Paciugo, _React$Component5);
+
+  function Paciugo() {
+    _classCallCheck(this, Paciugo);
+
+    return _possibleConstructorReturn(this, (Paciugo.__proto__ || Object.getPrototypeOf(Paciugo)).apply(this, arguments));
+  }
+
+  _createClass(Paciugo, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Paciugo"
+      );
+    }
+  }]);
+
+  return Paciugo;
+}(React.Component);
+
+var StarGinger = function (_React$Component6) {
+  _inherits(StarGinger, _React$Component6);
+
+  function StarGinger() {
+    _classCallCheck(this, StarGinger);
+
+    return _possibleConstructorReturn(this, (StarGinger.__proto__ || Object.getPrototypeOf(StarGinger)).apply(this, arguments));
+  }
+
+  _createClass(StarGinger, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Star Ginger"
+      );
+    }
+  }]);
+
+  return StarGinger;
+}(React.Component);
+
+var Tamales = function (_React$Component7) {
+  _inherits(Tamales, _React$Component7);
+
+  function Tamales() {
+    _classCallCheck(this, Tamales);
+
+    return _possibleConstructorReturn(this, (Tamales.__proto__ || Object.getPrototypeOf(Tamales)).apply(this, arguments));
+  }
+
+  _createClass(Tamales, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Tamales"
+      );
+    }
+  }]);
+
+  return Tamales;
+}(React.Component);
+
+var Tavola = function (_React$Component8) {
+  _inherits(Tavola, _React$Component8);
+
+  function Tavola() {
+    _classCallCheck(this, Tavola);
+
+    return _possibleConstructorReturn(this, (Tavola.__proto__ || Object.getPrototypeOf(Tavola)).apply(this, arguments));
+  }
+
+  _createClass(Tavola, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Tavola"
+      );
+    }
+  }]);
+
+  return Tavola;
+}(React.Component);
+
+var Wasabi = function (_React$Component9) {
+  _inherits(Wasabi, _React$Component9);
+
+  function Wasabi() {
+    _classCallCheck(this, Wasabi);
+
+    return _possibleConstructorReturn(this, (Wasabi.__proto__ || Object.getPrototypeOf(Wasabi)).apply(this, arguments));
+  }
+
+  _createClass(Wasabi, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Wasabi"
+      );
+    }
+  }]);
+
+  return Wasabi;
+}(React.Component);
+
+var Yum = function (_React$Component10) {
+  _inherits(Yum, _React$Component10);
+
+  function Yum() {
+    _classCallCheck(this, Yum);
+
+    return _possibleConstructorReturn(this, (Yum.__proto__ || Object.getPrototypeOf(Yum)).apply(this, arguments));
+  }
+
+  _createClass(Yum, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
+        "Yum! Bakery"
+      );
+    }
+  }]);
+
+  return Yum;
+}(React.Component);
+
+var Menu = function (_React$Component11) {
+  _inherits(Menu, _React$Component11);
+
+  function Menu() {
+    _classCallCheck(this, Menu);
+
+    return _possibleConstructorReturn(this, (Menu.__proto__ || Object.getPrototypeOf(Menu)).apply(this, arguments));
+  }
+
+  _createClass(Menu, [{
+    key: "render",
+    value: function render() {
+      return React.createElement(
+        "div",
+        null,
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('bamboo');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Bamboo'
+          "h1",
+          null,
+          "Dining Locations"
         ),
+        React.createElement(Bamboo, null),
         React.createElement(
-          'div',
-          { id: 'bamboo', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'A freshly prepared selection of authentic dim sum and hot plates.'
-          )
+          "p1",
+          null,
+          "Authentic dim sum selections and hot plates."
         ),
+        React.createElement("hr", null),
+        React.createElement(DeliDelish, null),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('deli delish');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Deli Delish'
+          "p2",
+          null,
+          "Hot and cold grinders featuring house-roasted turkey and roast beef."
         ),
+        React.createElement("hr", null),
+        React.createElement(GreenFields, null),
         React.createElement(
-          'div',
-          { id: 'deli delish', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Hot and cold sandwiches and rolls prepared with a variety of ingredients, including house-roasted turkey and roast beef'
-          )
+          "p3",
+          null,
+          "Freshly tossed salads made to-order with locally sourced ingredients."
         ),
+        React.createElement("hr", null),
+        React.createElement(Grill, null),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('green fields');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Green Fields'
+          "p4",
+          null,
+          "Classic American fare ranging from burgers to chicken tenders to milkshakes."
         ),
+        React.createElement("hr", null),
+        React.createElement(Paciugo, null),
         React.createElement(
-          'div',
-          { id: 'green fields', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'A variety of salads tossed to-order with locally sourced ingredients.'
-          )
+          "p5",
+          null,
+          "Traditional Italian gelato made with all-natural ingredients and real fruit."
         ),
+        React.createElement("hr", null),
+        React.createElement(StarGinger, null),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('paciugo');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Paciugo'
+          "p6",
+          null,
+          "A variety of Vietnamese, Thai, and Korean specialties including pho and bibimbap."
         ),
+        React.createElement("hr", null),
+        React.createElement(Tamales, null),
         React.createElement(
-          'div',
-          { id: 'paciugo', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Smooth, traditionally crafted Italian gelato made from fresh, all-natural ingredients.'
-          )
+          "p7",
+          null,
+          "Burritos, bowls, and salads made to-order with sustainably-harvested ingredients."
         ),
+        React.createElement("hr", null),
+        React.createElement(Tavola, null),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('star ginger');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Star Ginger'
+          "p8",
+          null,
+          "Classic Mediterranean dishes including hummus bowls, pizza, and pasta."
         ),
+        React.createElement("hr", null),
+        React.createElement(Wasabi, null),
         React.createElement(
-          'div',
-          { id: 'star ginger', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Authentic Vietnamese, Thai, and Korean specialties, including pho, rice bowls, and bibimbap.'
-          )
+          "p9",
+          null,
+          "Sushi made fresh with sustainably sourced fish and a wide variety of other Japanese specialties."
         ),
+        React.createElement("hr", null),
+        React.createElement(Yum, null),
         React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('tamales');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Tamales'
-        ),
-        React.createElement(
-          'div',
-          { id: 'tamales', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Burritos, burrito bowls, and salads made to-order with fresh, sustainably-sourced ingredients.'
-          )
-        ),
-        React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('tavola');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Tavola'
-        ),
-        React.createElement(
-          'div',
-          { id: 'tavola', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Classic Mediterannean specialties including pizza, pasta, and hummus bowls.'
-          )
-        ),
-        React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('wasabi');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Wasabi'
-        ),
-        React.createElement(
-          'div',
-          { id: 'wasabi', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'A selection of sushi made with sustainably sourced seafood, as well as other authentic Japanese offerings.'
-          )
-        ),
-        React.createElement(
-          'button',
-          { className: 'btn btn-block', onClick: function onClick() {
-              _this2.toggle.bind('yum');
-              //console.log('testing=this.state.open ', this.state.open);
-            } },
-          'Yum! Bakery'
-        ),
-        React.createElement(
-          'div',
-          { id: 'yum', className: 'collapse' },
-          React.createElement(
-            'div',
-            null,
-            'Full-service bakery offering homemade cookies, brownies, and seasonal specialties.'
-          )
+          "p10",
+          null,
+          "Homemade baked goods including cookies, cakes, and French macaroons, as well as seasonal offerings."
         )
       );
     }
   }]);
 
-  return MyComponent;
+  return Menu;
 }(React.Component);
 
+<<<<<<< HEAD
 ;
 
 ReactDOM.render(React.createElement(MyComponent, null), document.getElementById('MyComponent'));
 >>>>>>> 59a0f7537f55da33c885165783fb7336d6193e5f
+=======
+ReactDOM.render(React.createElement(Menu, null), contentNode);
+>>>>>>> b065d76c7dd0ff5d0712a5be57f623ee9385b681
