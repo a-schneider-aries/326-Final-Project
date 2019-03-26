@@ -13,10 +13,13 @@ class MyComponent extends React.Component {
     super();
   }
 
+
   render() {
     return (
       <div>
-        <h1>Dining Locations and Their Food</h1>
+        <button class="collapsible">Open Collapsible</button>
+
+        <h1 class = "content">Dining Locations and Their Food</h1>
         <div>Bamboo</div>
         <p1>Authentic dim sum selections and hot plates.</p1>
         <div>Deli Delish</div>
@@ -42,6 +45,22 @@ class MyComponent extends React.Component {
     );
   }
 }
+// added code 
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+// added code 
 
 // This renders the JSX component inside the content node:
 ReactDOM.render(<MyComponent />, contentNode);

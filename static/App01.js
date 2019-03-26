@@ -32,8 +32,13 @@ var MyComponent = function (_React$Component) {
         "div",
         null,
         React.createElement(
+          "button",
+          { "class": "collapsible" },
+          "Open Collapsible"
+        ),
+        React.createElement(
           "h1",
-          null,
+          { "class": "content" },
           "Dining Locations and Their Food"
         ),
         React.createElement(
@@ -142,8 +147,24 @@ var MyComponent = function (_React$Component) {
 
   return MyComponent;
 }(React.Component);
+// added code 
+
+
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+// added code 
 
 // This renders the JSX component inside the content node:
-
-
 ReactDOM.render(React.createElement(MyComponent, null), contentNode);
