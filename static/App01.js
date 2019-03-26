@@ -44,7 +44,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p1",
           null,
-          "Authentic dim sum selections and hot plates."
+          "    Authentic dim sum selections and hot plates."
         ),
         React.createElement(
           "div",
@@ -54,7 +54,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p2",
           null,
-          "Hot and cold grinders featuring house-roasted turkey and roast beef."
+          "    Hot and cold grinders featuring house-roasted turkey and roast beef."
         ),
         React.createElement(
           "div",
@@ -64,7 +64,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p3",
           null,
-          "Freshly tossed salads made to-order with locally sourced ingredients."
+          "    Freshly tossed salads made to-order with locally sourced ingredients."
         ),
         React.createElement(
           "div",
@@ -74,7 +74,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p4",
           null,
-          "Classic American fare ranging from burgers to chicken tenders to milkshakes."
+          "    Classic American fare ranging from burgers to chicken tenders to milkshakes."
         ),
         React.createElement(
           "div",
@@ -84,7 +84,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p5",
           null,
-          "A selection of smooth, all-natural gelato."
+          "    A selection of smooth, all-natural gelato."
         ),
         React.createElement(
           "div",
@@ -94,7 +94,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p6",
           null,
-          "Pho noodle bowls, rice bowls, and authentic Korean bibimbap."
+          "    Pho noodle bowls, rice bowls, and authentic Korean bibimbap."
         ),
         React.createElement(
           "div",
@@ -104,7 +104,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p7",
           null,
-          "Burritos, bowls, and salads made to-order."
+          "    Burritos, bowls, and salads made to-order."
         ),
         React.createElement(
           "div",
@@ -114,7 +114,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p8",
           null,
-          "Classic Mediterranean fare including hummus bowls, pizza, and pasta."
+          "    Classic Mediterranean fare including hummus bowls, pizza, and pasta."
         ),
         React.createElement(
           "div",
@@ -124,7 +124,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p9",
           null,
-          "Sushi made with sustainably sourced fish, miso soup, and the like."
+          "    Sushi made with sustainably sourced fish, miso soup, and the like."
         ),
         React.createElement(
           "div",
@@ -134,7 +134,7 @@ var MyComponent = function (_React$Component) {
         React.createElement(
           "p10",
           null,
-          "Freshly baked goods including cookies, cakes, and French macaroons."
+          "   Freshly baked goods including cookies, cakes, and French macaroons."
         )
       );
     }
