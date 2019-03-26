@@ -1,4 +1,7 @@
 const carts = [
+  {
+    item: ''
+  }
 ];
 
 var contentNode = document.getElementById("contents");
@@ -24,6 +27,7 @@ function MenuTable(props) {
       <thead>
         <tr>
           <th>Menu</th>
+          <th>Menu 2</th>
           <td>chicken</td>
           <td>Meat</td>
           <td>Goat</td>
