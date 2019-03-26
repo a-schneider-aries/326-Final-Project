@@ -267,24 +267,74 @@ var Menu = function (_React$Component11) {
           "Dining Locations"
         ),
         React.createElement(Bamboo, null),
+        React.createElement(
+          "p1",
+          null,
+          "Authentic dim sum selections and hot plates."
+        ),
         React.createElement("hr", null),
         React.createElement(DeliDelish, null),
+        React.createElement(
+          "p2",
+          null,
+          "Hot and cold grinders featuring house-roasted turkey and roast beef."
+        ),
         React.createElement("hr", null),
         React.createElement(GreenFields, null),
+        React.createElement(
+          "p3",
+          null,
+          "Freshly tossed salads made to-order with locally sourced ingredients."
+        ),
         React.createElement("hr", null),
         React.createElement(Grill, null),
+        React.createElement(
+          "p4",
+          null,
+          "Classic American fare ranging from burgers to chicken tenders to milkshakes."
+        ),
         React.createElement("hr", null),
         React.createElement(Paciugo, null),
+        React.createElement(
+          "p5",
+          null,
+          "Traditional Italian gelato made with all-natural ingredients and real fruit."
+        ),
         React.createElement("hr", null),
         React.createElement(StarGinger, null),
+        React.createElement(
+          "p6",
+          null,
+          "A variety of Vietnamese, Thai, and Korean specialties including pho and bibimbap."
+        ),
         React.createElement("hr", null),
         React.createElement(Tamales, null),
+        React.createElement(
+          "p7",
+          null,
+          "Burritos, bowls, and salads made to-order with sustainably-harvested ingredients."
+        ),
         React.createElement("hr", null),
         React.createElement(Tavola, null),
+        React.createElement(
+          "p8",
+          null,
+          "Classic Mediterranean dishes including hummus bowls, pizza, and pasta."
+        ),
         React.createElement("hr", null),
         React.createElement(Wasabi, null),
+        React.createElement(
+          "p9",
+          null,
+          "Sushi made fresh with sustainably sourced fish and a wide variety of other Japanese specialties."
+        ),
         React.createElement("hr", null),
-        React.createElement(Yum, null)
+        React.createElement(Yum, null),
+        React.createElement(
+          "p10",
+          null,
+          "Homemade baked goods including cookies, cakes, and French macaroons, as well as seasonal offerings."
+        )
       );
     }
   }]);
