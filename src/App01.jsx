@@ -8,10 +8,14 @@ const state = [
 // This grabs the DOM element to be used to mount React components.
 var contentNode = document.getElementById("contents");
 
+
+
 class Bamboo extends React.Component {
   render() {
   return (
-  <div>Bamboo</div>
+    <div>
+  <p11>Bamboo</p11>
+  </div>
   )
   }
 <<<<<<< HEAD
@@ -74,7 +78,7 @@ class Bamboo extends React.Component {
  class DeliDelish extends React.Component {
   render() {
   return (
-  <div>Deli Delish</div>
+  <div><p12>Deli Delish</p12></div>
   )
 >>>>>>> b065d76c7dd0ff5d0712a5be57f623ee9385b681
   }
@@ -83,56 +87,56 @@ class Bamboo extends React.Component {
  class GreenFields extends React.Component {
   render() {
   return (
-  <div>Green Fields</div>
+  <div><p13>Green Fields</p13></div>
   )
   }
  }
  class Grill extends React.Component {
   render() {
   return (
-  <div>The Grill</div>
+  <div><p14>The Grill</p14></div>
   )
   }
  }
  class Paciugo extends React.Component {
   render() {
   return (
-  <div>Paciugo</div>
+  <div><p15>Paciugo</p15></div>
   )
   }
  }
  class StarGinger extends React.Component {
   render() {
   return (
-  <div>Star Ginger</div>
+  <div><p16>Star Ginger</p16></div>
   )
   }
  }
  class Tamales extends React.Component {
   render() {
   return (
-  <div>Tamales</div>
+  <div><p17>Tamales</p17></div>
   )
   }
  }
  class Tavola extends React.Component {
   render() {
   return (
-  <div>Tavola</div>
+  <div><p18>Tavola</p18></div>
   )
   }
  }
  class Wasabi extends React.Component {
   render() {
   return (
-  <div>Wasabi</div>
+  <div><p19>Wasabi</p19></div>
   )
   }
  }
  class Yum extends React.Component {
   render() {
   return (
-  <div>Yum! Bakery</div>
+  <div><p20>Yum! Bakery</p20></div>
   )
   }
  }
