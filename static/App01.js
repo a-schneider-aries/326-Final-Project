@@ -1,88 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-// //import { pbkdf2 } from "crypto";
-
-// // This is a place holder for the initial application state.
-// const state = [
-
-// ];
-
-// // This grabs the DOM element to be used to mount React components.
-// var contentNode = document.getElementById("contents");
-
-
-// // class Example extends Component {
-// //   constructor(props) {
-// //     super(props);
-// //     this.toggle = this.toggle.bind(this);
-// //     this.state = { collapse: false };
-// //   }
-
-// //   toggle() {
-// //     this.setState(state => ({ collapse: !state.collapse }));
-// //   }
-
-// //   render() {
-// //     return (
-// //       <div>
-// //         <Button color="primary" onClick={this.toggle} style={{ marginBottom: '1rem' }}>Toggle</Button>
-// //         <Collapse isOpen={this.state.collapse}>
-// //           <Card>
-// //             <CardBody>
-// //             Anim pariatur cliche reprehenderit,
-// //              enim eiusmod high life accusamus terry richardson ad squid. Nihil
-// //              anim keffiyeh helvetica, craft beer labore wes anderson cred
-// //              nesciunt sapiente ea proident.
-// //             </CardBody>
-// //           </Card>
-// //         </Collapse>
-// //       </div>
-// //     );
-// //   }
-// // }
-
-// class MyComponent extends React.Component {
-//   constructor() {
-//     super();
-//   }
-
-//   render() {
-//     return (
-//       <div>
-//         <h1>Dining Locations and Their Food</h1>
-//         <div><h1>Bamboo</h1></div>
-//         <p>Authentic dim sum selections and hot plates.</p>
-//         <div><h1>Deli Delish</h1></div>
-//         <p>Hot and cold grinders featuring house-roasted turkey and roast beef.</p>
-//         <div><h1>Green Fields</h1></div>
-//         <p>Freshly tossed salads made to-order with locally sourced ingredients.</p>
-//         <div><h1>The Grill</h1></div>
-//         <p>Classic American fare ranging from burgers to chicken tenders to milkshakes.</p>
-//         <div><h1>Paciugo</h1></div>
-//         <p>A selection of smooth, all-natural gelato.</p>
-//         <div><h1>Star Ginger</h1></div>
-//         <p>Pho noodle bowls, rice bowls, and authentic Korean bibimbap.</p>
-//         <div><h1>Tamales</h1></div>
-//         <p>Burritos, bowls, and salads made to-order.</p>
-//         <div><h1>Tavola</h1></div>
-//         <p>Classic Mediterranean fare including hummus bowls, pizza, and pasta.</p>
-//         <div><h1>Wasabi</h1></div>
-//         <p>Sushi made with sustainably sourced fish, miso soup, and the like.</p>
-//         <div><h1>Yum! Bakery</h1></div>
-//         <p>Freshly baked goods including cookies, cakes, and French macaroons.</p>
-//       </div>
-//     );
-//   }
-// }
-
-// // This renders the JSX component inside the content node:
-// ReactDOM.render(<MyComponent />, contentNode);
 "use strict";
-=======
-'use strict';
-=======
-"use strict";
->>>>>>> b065d76c7dd0ff5d0712a5be57f623ee9385b681
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -92,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import { pbkdf2 } from "crypto";
+// //import { pbkdf2 } from "crypto";
 
 // This is a place holder for the initial application state.
 var state = [];
@@ -466,11 +382,4 @@ var Menu = function (_React$Component11) {
   return Menu;
 }(React.Component);
 
-<<<<<<< HEAD
-;
-
-ReactDOM.render(React.createElement(MyComponent, null), document.getElementById('MyComponent'));
->>>>>>> 59a0f7537f55da33c885165783fb7336d6193e5f
-=======
 ReactDOM.render(React.createElement(Menu, null), contentNode);
->>>>>>> b065d76c7dd0ff5d0712a5be57f623ee9385b681
