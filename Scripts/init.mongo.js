@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 bamboo = new Mongo().getDB(' ');
 bamboo.items.remove({});
 bamboo.items.insert([
@@ -108,34 +109,43 @@ yum.items.createIndex({ owner: 1 });
 yum.items.createIndex({ created: 1 });
 =======
 db = new Mongo().getDB('menu');
+=======
+var db = new Mongo().getDB('menu');
+>>>>>>> a7738f1885c36e89dcfeda84304d8dd9fda68a09
 db.items.remove({});
 db.items.insert([
  {location: 'Bamboo', item: 'Dim Sum Platter', description: '6 pieces of dim sum', price: 9.00},
  {location: 'Bamboo', item: 'Individual Plate', description: '2 pieces of dim sum', price: 3.50},
  {location: 'Bamboo', item: 'Lunch and Dinner Hot Plate Special', description: '2 pieces of dim sum', price: 9.00},
  {location: 'Bamboo', item: 'Fountain Drink', description: '', price: 1.00},
- {location: 'The Grill', "item" : "Chicken Bacon Ranch Ciabatta", "price" : 8 },
-{location: 'The Grill', "item" : "Buffalo Chicken Ciabatta", "price" : 8 },
-{location: 'The Grill', "item" : "Steak and Cheese Ciabatta", "price" : 8 },
-{location: 'The Grill', "item" : "Chicken and Pesto", "price" : 8 },
-{location: 'The Grill', "item" : "Valley Chicken Sandwich", "price" : 8 },
-{location: 'The Grill', "item" : "Tavola Veggie Sandwich", "price" : 6.75 },
-{location: 'The Grill', "item" : "Spicy Roast Beef Sandwich", "price" : 7 },
-{location: 'The Grill', "item" : "Italian Cold Cut Sandwich", "price" : 8 },
-{location: 'The Grill', "item" : "Caprese Sandwich", "price" : 7 },
-{location: 'The Grill', "item" : "Classic Grinder", "price" : 7 },
-{location: 'The Grill', "item" : "Three Cheese and Spinach Hot Sandwich", "price" : 7.25 },
-{location: 'The Grill', "item" : "The BLT", "price" : 6 },
-{location: 'The Grill', "item" : "Blue Wall Club Hot Sandwich", "price" : 8 },
-{location: 'The Grill', "item" : "Chicken Parmesan Hot Sandwich", "price" : 8 },
-{location: 'The Grill', "item" : "Extra Cheese", "price" : 1.5 },
-{location: 'The Grill', "item" : "Avocado", "price" : 2 },
-{location: 'The Grill', "item" : "Bacon", "price" : 2 },
-{location: 'The Grill', "item" : "Fresh Hummus", "price" : 3 },
-{location: 'The Grill', "item" : "Extra Meat", "price" : 3 },
-{location: 'The Grill', "item" : "Combo Upgrade", "price" : 2 }
+ {location: 'The Grill', item : "Chicken Bacon Ranch Ciabatta", price : 8 },
+{location: 'The Grill', item : "Buffalo Chicken Ciabatta", price : 8 },
+{location: 'The Grill', item : "Steak and Cheese Ciabatta", price : 8 },
+{location: 'The Grill', item : "Chicken and Pesto", price : 8 },
+{location: 'The Grill', item : "Valley Chicken Sandwich", price : 8 },
+{location: 'The Grill', item : "Tavola Veggie Sandwich", price : 6.75 },
+{location: 'The Grill', item : "Spicy Roast Beef Sandwich", price : 7 },
+{location: 'The Grill', item : "Italian Cold Cut Sandwich", price : 8 },
+{location: 'The Grill', item : "Caprese Sandwich", price : 7 },
+{location: 'The Grill', item : "Classic Grinder", price : 7 },
+{location: 'The Grill', item : "Three Cheese and Spinach Hot Sandwich", price : 7.25 },
+{location: 'The Grill', item : "The BLT", price : 6 },
+{location: 'The Grill', item : "Blue Wall Club Hot Sandwich", price : 8 },
+{location: 'The Grill', item : "Chicken Parmesan Hot Sandwich", price : 8 },
+{location: 'The Grill', item : "Extra Cheese", price : 1.5 },
+{location: 'The Grill', item : "Avocado", price : 2 },
+{location: 'The Grill', item : "Bacon", price : 2 },
+{location: 'The Grill', item : "Fresh Hummus", price : 3 },
+{location: 'The Grill', item : "Extra Meat", price : 3 },
+{location: 'The Grill', item : "Combo Upgrade", price : 2 }
 ]);
+<<<<<<< HEAD
 db.items.createIndex({ status: 1 });
 db.items.createIndex({ owner: 1 });
 db.items.createIndex({ created: 1 });
 >>>>>>> 7d133e9a20a516e8dca5ca9702016f67b6b00548
+=======
+db.items.createIndex({ location: 1 });
+db.items.createIndex({ item: 1 });
+db.items.createIndex({ price: 1 });
+>>>>>>> a7738f1885c36e89dcfeda84304d8dd9fda68a09
