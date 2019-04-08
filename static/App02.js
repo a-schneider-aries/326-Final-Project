@@ -57,14 +57,9 @@ function MenuTable(props) {
           "Menu"
         ),
         React.createElement(
-          "th",
-          null,
-          "Menu 2"
-        ),
-        React.createElement(
           "td",
           null,
-          "chicken"
+          "Chicken"
         ),
         React.createElement(
           "td",

@@ -27,7 +27,7 @@ db.items.insertMany([
 {location: 'The Grill', item : "Bacon", price : 2 },
 {location: 'The Grill', item : "Fresh Hummus", price : 3 },
 {location: 'The Grill', item : "Extra Meat", price : 3 },
-{location: 'The Grill', item : "Combo Upgrade", price : 2 }
+{location: 'The Grill', item : "Combo Upgrade", price : 2 },
 ]);
 
 db.items.createIndex({ status: 1 });
@@ -37,5 +37,6 @@ db.items.createIndex({ created: 1 });
 
 db.items.createIndex({ location: 1 });
 db.items.createIndex({ item: 1 });
+db.items.createIndex({ description: 1 });
 db.items.createIndex({ price: 1 });
 
