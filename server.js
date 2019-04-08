@@ -1,5 +1,5 @@
+const body_parser = require('body-parser')
 const express = require('express');
-const mongodb = require('mongodb');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -16,7 +16,10 @@ MongoClient.connect('mongodb://localhost', { useNewUrlParser: true }).then(conne
   db = connection.db('menu');
   app.listen(8080, () => {
     console.log('App started on port 8080');
-  });
-}).catch(error => {
+});
+
+app.use(express.body_parser)
+app.use(express.mongo)
+  }).catch(error => {
   console.log('ERROR:', error);
 });
