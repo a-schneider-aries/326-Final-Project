@@ -8,7 +8,7 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-//import { pbkdf2 } from "crypto";
+// //import { pbkdf2 } from "crypto";
 
 // This is a place holder for the initial application state.
 var state = [];
@@ -303,18 +303,8 @@ var Menu = function (_React$Component11) {
         null,
         React.createElement(
           "h1",
-<<<<<<< HEAD
-          { "class": "content" },
-          "Dining Locations and Their Food"
-        ),
-        React.createElement(
-          "div",
-          null,
-          "Bamboo"
-=======
           null,
           "Dining Locations"
->>>>>>> b065d76c7dd0ff5d0712a5be57f623ee9385b681
         ),
         React.createElement(Bamboo, null),
         React.createElement(
