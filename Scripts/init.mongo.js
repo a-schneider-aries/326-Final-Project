@@ -13,7 +13,8 @@ bamboo.items.createIndex({ created: 1 });
 deli = new Mongo().getDB('deli');
 deli.items.remove({});
 deli.items.insert([
-    {"item" : "Chicken Bacon Ranch Ciabatta", "price" : 8 },
+ //insert menu items for deli delish
+ {"item" : "Chicken Bacon Ranch Ciabatta", "price" : 8 },
     {"item" : "Buffalo Chicken Ciabatta", "price" : 8 },
     {"item" : "Steak and Cheese Ciabatta", "price" : 8 },
     {"item" : "Chicken and Pesto", "price" : 8 },
@@ -103,7 +104,8 @@ wasabi.items.createIndex({ created: 1 });
 yum = new Mongo().getDB('yum');
 yum.items.remove({});
 yum.items.insert([
- //insert menu items for yum! bakery
+    {item: 'Paciugo Gelato', price: 2.50},
+    {item: 'Homemade cookies, pastries, and cakes', price: 4.00}
 ]);
 yum.items.createIndex({ status: 1 });
 yum.items.createIndex({ owner: 1 });
