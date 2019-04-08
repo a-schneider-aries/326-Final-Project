@@ -1,7 +1,10 @@
 bamboo = new Mongo().getDB('bamboo');
 bamboo.items.remove({});
 bamboo.items.insert([
- //insert menu items for bamboo
+ {item: 'Dim Sum Platter', description: '6 pieces of dim sum', price: 9.00},
+ {item: 'Individual Plate', description: '2 pieces of dim sum', price: 3.50},
+ {item: 'Lunch and Dinner Hot Plate Special', description: '2 pieces of dim sum', price: 9.00},
+ {item: 'Fountain Drink', description: '', price: 1.00}
 ]);
 bamboo.items.createIndex({ status: 1 });
 bamboo.items.createIndex({ owner: 1 });
