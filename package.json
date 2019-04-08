@@ -13,7 +13,12 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+<<<<<<< HEAD
     "mongodb": "^3.2.3"
+=======
+    "mongodb": "^3.2.3",
+    "react-collapsible": "^2.6.0"
+>>>>>>> aa58f0492d16b959433761ae45ddef1f8d16dce6
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

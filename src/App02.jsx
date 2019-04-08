@@ -27,8 +27,7 @@ function MenuTable(props) {
       <thead>
         <tr>
           <th>Menu</th>
-          <th>Menu 2</th>
-          <td>chicken</td>
+          <td>Chicken</td>
           <td>Meat</td>
           <td>Goat</td>
           <td>Beef</td>

@@ -28,4 +28,5 @@ db.items.insertMany([
 ]);
 db.items.createIndex({ location: 1 });
 db.items.createIndex({ item: 1 });
+db.items.createIndex({ description: 1 });
 db.items.createIndex({ price: 1 });
