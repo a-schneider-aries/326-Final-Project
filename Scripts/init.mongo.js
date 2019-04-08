@@ -1,4 +1,5 @@
 bamboo = new Mongo().getDB('bamboo');
+bamboo = connect("localhost:3000")
 bamboo.items.remove({});
 bamboo.items.insert([
  {item: 'Dim Sum Platter', description: '6 pieces of dim sum', price: 9.00},
