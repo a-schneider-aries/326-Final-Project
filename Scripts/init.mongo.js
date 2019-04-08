@@ -4,10 +4,10 @@ db = new Mongo().getDB('menu');
 var db = new Mongo().getDB('menu');
 db.items.remove({});
 db.items.insertMany([
- {location: 'Bamboo', item: 'Dim Sum Platter', description: '6 pieces of dim sum', price: 9.00},
- {location: 'Bamboo', item: 'Individual Plate', description: '2 pieces of dim sum', price: 3.50},
- {location: 'Bamboo', item: 'Lunch and Dinner Hot Plate Special', description: '2 pieces of dim sum', price: 9.00},
- {location: 'Bamboo', item: 'Fountain Drink', description: '', price: 1.00},
+ {location: 'Bamboo', item: 'Dim Sum Platter', price: 9.00},
+ {location: 'Bamboo', item: 'Individual Plate', price: 3.50},
+ {location: 'Bamboo', item: 'Lunch and Dinner Hot Plate Special', price: 9.00},
+ {location: 'Bamboo', item: 'Fountain Drink', price: 1.00},
  {location: 'The Grill', item : "Chicken Bacon Ranch Ciabatta", price : 8 },
 {location: 'The Grill', item : "Buffalo Chicken Ciabatta", price : 8 },
 {location: 'The Grill', item : "Steak and Cheese Ciabatta", price : 8 },
