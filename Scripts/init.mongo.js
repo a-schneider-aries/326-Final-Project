@@ -14,7 +14,25 @@ bamboo.items.createIndex({ created: 1 });
 deli = new Mongo().getDB('deli');
 deli.items.remove({});
 deli.items.insert([
- //insert menu items for deli delish
+    {"item" : "Chicken Bacon Ranch Ciabatta", "price" : 8 },
+    {"item" : "Buffalo Chicken Ciabatta", "price" : 8 },
+    {"item" : "Steak and Cheese Ciabatta", "price" : 8 },
+    {"item" : "Chicken and Pesto", "price" : 8 },
+    {"item" : "Valley Chicken Sandwich", "price" : 8 },
+    {"item" : "Tavola Veggie Sandwich", "price" : 6.75 },
+    {"item" : "Spicy Roast Beef Sandwich", "price" : 7 },
+    {"item" : "Italian Cold Cut Sandwich", "price" : 8 },
+    { "item" : "Caprese Sandwich", "price" : 7 },
+    { "item" : "Classic Grinder", "price" : 7 },
+    {"item" : "Three Cheese and Spinach Hot Sandwich", "price" : 7.25 },
+    {"item" : "The BLT", "price" : 6 },
+    {"item" : "Blue Wall Club Hot Sandwich", "price" : 8 },
+    {"item" : "Chicken Parmesan Hot Sandwich", "price" : 8 },
+    {"item" : "Extra Cheese", "price" : 1.5 },
+    {"item" : "Avocado", "price" : 2 },
+    {"item" : "Bacon", "price" : 2 },
+    {"item" : "Fresh Hummus", "price" : 3 },
+    {"item" : "Extra Meat", "price" : 3 }
 ]);
 deli.items.createIndex({ status: 1 });
 deli.items.createIndex({ owner: 1 });
