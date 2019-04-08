@@ -1,5 +1,5 @@
 bamboo = new Mongo().getDB('bamboo');
-bamboo = connect("localhost:3000")
+// bamboo = connect("localhost:3000")
 bamboo.items.remove({});
 bamboo.items.insert([
  {item: 'Dim Sum Platter', description: '6 pieces of dim sum', price: 9.00},
@@ -95,7 +95,29 @@ tavola.items.createIndex({ created: 1 });
 wasabi = new Mongo().getDB('wasabi');
 wasabi.items.remove({});
 wasabi.items.insert([
- //insert menu items for wasabi
+    {item: 'Teriyaki Don', description: 'Choice of Chicken, Beef or Salmon in teriyaki sauce in a bowl of rice', price: 9.00}, 
+    {item: 'Katsu Don', description: 'Choice of Chicken or Pork', price: 9.00}, 
+    {item: 'Blue Wall Don', description: 'Beef Bulgogi, Vegetable Tempura & Broccoli', price: 10.00}, 
+    {item: 'Teppanyaki', description: 'Served with Steamed Rice or Fried Rice and Stir-fried Vegetables. Choice of Chicken or Beef', price: 9.00}, 
+    {item: 'Paradise Roll', description: 'Shrimp Tempura, Crab Meat & Cucumber Roll Wrapped with Salmon & Avocado Topped with Spicy Mayo, Tempura Crunch & Eel Sauce', price: 10.00}, 
+    {item: 'Rainbow Roll', description: 'California Roll topped with assorted Raw Fish, Avocado, & Masago Japanese Mayo', price: 10.00}, 
+    {item: 'Fantastic Roll', description: 'Smoked salmon, Crab Meat & Cucumber topped with Tuna & Avocado', price: 10.00}, 
+    {item: 'Manhattan Roll', description: 'Shrimp roll topped with Spicy Crab Meat & Masago', price: 9.00}, 
+    {item: 'Oishi Roll', description: 'Shrimp tempura, Crab Meat, Tuna, Salmon, Albacore Tuna, Avocado & Masago topped with Spicy Mayo & Tempura Crunch', price: 10.00}, 
+    {item: 'Tiger Roll', description: 'Shrimp Tempura Roll with Tuna and Salmon, Topped with Avocad', price: 10.00}, 
+    {item: 'Alaskan Roll', description: 'Smoked Salmon, Asparagus, Cucumber topped with Masago', price: 7.50}, 
+    {item: 'California Roll', description: 'Crab Meat, Cucumber, Avocado', price: 6.50}, 
+    {item: 'Vegetable Roll', description: 'Asparagus, Carrots, Cucumber, Avocado', price: 6.50}, 
+    {item: 'Sweet Potato Tempura Roll', description: 'Sweet Potato Tempura, Cucumber', price: 6.50}, 
+    {item: 'Spicy Tuna Roll', description: 'Spicy Tuna, Cucumber, Tempura Crunch', price: 7.00}, 
+    {item: 'Philadelphia Roll', description: 'Smoked Salmon, Cream Cheese, Cucumber', price: 7.50},
+    {item: 'Spicy Tuna Bowl', description: 'Spicy Tuna, Spring Mix, Avocado, Sushi Rice', price: 10.00}, 
+    {item: 'Poke Bowl', description: 'Marinated Tuna, Spring Mix, Pickled Cucumber, Mango, Avocado, Quinoa, and Sushi Rice ', price: 10.00}, 
+    {item: 'Miso Soup', description: '', price: 2.00}, 
+    {item: 'Edamame', description: '', price: 3.25}, 
+    {item: 'Seaweed Salad', description: '', price: 3.25}, 
+    {item: 'Fried Rice', description: '', price: 3.75}, 
+    {item: 'Fountain Drink', description: '', price: 1.00}
 ]);
 wasabi.items.createIndex({ status: 1 });
 wasabi.items.createIndex({ owner: 1 });
