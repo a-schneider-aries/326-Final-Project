@@ -87,7 +87,6 @@ class Bamboo extends React.Component {
   render() {
   return (
   <div>
-  <h1>Dining Locations</h1>
   <Bamboo />
   <p1>Authentic dim sum selections and hot plates.</p1>
   <hr />

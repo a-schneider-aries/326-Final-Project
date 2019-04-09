@@ -301,11 +301,6 @@ var Menu = function (_React$Component11) {
       return React.createElement(
         "div",
         null,
-        React.createElement(
-          "h1",
-          null,
-          "Dining Locations"
-        ),
         React.createElement(Bamboo, null),
         React.createElement(
           "p1",
