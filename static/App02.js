@@ -99,6 +99,11 @@ var CartRow = function CartRow(props) {
       "td",
       null,
       props.cart.item
+    ),
+    React.createElement(
+      "td",
+      null,
+      props.cart.price
     )
   );
 };
@@ -119,7 +124,12 @@ function CartTable(props) {
         React.createElement(
           "th",
           null,
-          "Your Cart"
+          "Item"
+        ),
+        React.createElement(
+          "th",
+          null,
+          "Price"
         )
       )
     ),
@@ -150,11 +160,13 @@ var CartAdd = function (_React$Component2) {
       var form = document.forms.cartAdd;
       this.props.createCart({
         item: form.item.value,
+        price: form.price.value,
         status: 'New',
         created: new Date()
       });
       // Clear the form for the next input.
       form.item.value = '';
+      form.price.value = '';
     }
   }, {
     key: "render",
@@ -166,6 +178,7 @@ var CartAdd = function (_React$Component2) {
           "form",
           { name: "cartAdd", onSubmit: this.handleSubmit },
           React.createElement("input", { type: "text", name: "item", placeholder: "Item" }),
+          React.createElement("input", { type: "text", name: "price", placeholder: "Price" }),
           React.createElement(
             "button",
             null,
