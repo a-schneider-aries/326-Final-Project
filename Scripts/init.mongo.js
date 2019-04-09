@@ -1,4 +1,4 @@
-var db = new Mongo().getDB('menu');
+db = new Mongo().getDB('menu');
 db.items.remove({});
 db.items.insertMany([
  {location: 'Bamboo', item: 'Dim Sum Platter', price: 9.00},

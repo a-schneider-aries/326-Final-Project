@@ -1,11 +1,10 @@
-const body_parser = require('body-parser')
 const express = require('express');
 
 const app = express();
-
+const bodyParser = require('body-parser');
 
 app.use(express.static('static'));
-app.use(body_parser.json());
+app.use(bodyParser.json());
 
 const MongoClient = require('mongodb').MongoClient;
 
@@ -23,16 +22,9 @@ app.get('/api/items', (req, res) => {
 
 app.post('/api/items', (req, res) => {
   const newItem = req.body;
-  // NEW - remove this, we now have the object ID from mongo!
-  // newIssue.id = issues.length + 1;
-  newItem.created = new Date();
 
 
-  const err = validateIssue(newItem);
-  if (err) {
-    res.status(422).json({ message: `Invalid request: ${err}` });
-    return;
-  }
+  
   db.collection('items').insertOne(newItem).then(result =>
     db.collection('items').find({ _id: result.insertedId }).limit(1).next()
   ).then(newItem => {
