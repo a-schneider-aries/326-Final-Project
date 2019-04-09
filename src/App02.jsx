@@ -42,6 +42,7 @@ function MenuTable(props) {
 const CartRow = (props) => (
   <tr>
     <td>{props.cart.item}</td>
+    <td>{props.cart.price}</td>
   </tr>
 );
 
@@ -54,7 +55,8 @@ function CartTable(props) {
     <table className="bordered-table">
       <thead>
         <tr>
-          <th>Your Cart</th>
+          <th>Item</th>
+          <th>Price</th> 
         </tr>
       </thead>
       <tbody>{CartRows}</tbody>
@@ -73,11 +75,13 @@ class CartAdd extends React.Component {
     let form = document.forms.cartAdd;
     this.props.createCart({
       item: form.item.value,
+      price: form.price.value,
       status: 'New',
       created: new Date(),
     });
     // Clear the form for the next input.
     form.item.value = '';
+    form.price.value = '';
   }
 
   render() {
@@ -85,6 +89,7 @@ class CartAdd extends React.Component {
       <div>
         <form name="cartAdd" onSubmit={this.handleSubmit}>
           <input type="text" name="item" placeholder="Item" />
+          <input type="text" name="price" placeholder="Price"/>
           <button>Add</button>
         </form>
       </div>
