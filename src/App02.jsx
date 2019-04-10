@@ -1,8 +1,4 @@
-const carts = [
-  {
-    item: ''
-  }
-];
+
 
 var contentNode = document.getElementById("contents");
 
@@ -14,24 +10,21 @@ class CartFilter extends React.Component {
 
 const MenuRow = (props) => (
   <tr>
+    <td>{props.item.item}</td>
+    <td>{props.item.price}</td>
   </tr>
 );
-// props.cart.item}
 
 function MenuTable(props) {
-  const CartRows = props.carts.map(cart => (
-    <MenuRow key={"nothing"} cart={cart} />
+  const CartRows = props.items.map(item => (
+    <MenuRow key={item._id} item={item} />
   ));
   return (
     <table className="bordered-table">
       <thead>
         <tr>
-          <th>Menu</th>
-          <td>Chicken</td>
-          <td>Meat</td>
-          <td>Goat</td>
-          <td>Beef</td>
-          <td>Taco</td>
+          <th>Item</th>
+          <td>Price</td>
         </tr>
       </thead>
       <tbody>{CartRows}</tbody>
@@ -41,15 +34,15 @@ function MenuTable(props) {
 
 const CartRow = (props) => (
   <tr>
-    <td>{props.cart.item}</td>
-    <td>{props.cart.price}</td>
+    <td>{props.item.item}</td>
+    <td>{props.item.price}</td>
   </tr>
 );
 
 
 function CartTable(props) {
-  const CartRows = props.carts.map(cart => (
-    <CartRow key={cart.item} cart={cart} />
+  const CartRows = props.items.map(item => (
+    <CartRow key={item._id} item={item} />
   ));
   return (
     <table className="bordered-table">
@@ -100,7 +93,7 @@ class CartAdd extends React.Component {
 class CartList extends React.Component {
   constructor() {
     super();
-    this.state = { carts: [] };
+    this.state = { items: [] };
 
     this.createCart = this.createCart.bind(this);
   }
@@ -110,17 +103,43 @@ class CartList extends React.Component {
   }
 
   loadData() {
-    setTimeout(() => {
-      this.setState({
-        carts: carts
-      });
-    }, 500);
+    fetch('/api/items').then(response => {
+      if (response.ok) {
+        response.json().then(data => {
+          console.log("Total count of records:", data._metadata.total_count);
+          this.setState({ items: data.records });
+        });
+      } else {
+        response.json().then(error => {
+          alert("Failed to fetch issues:" + error.message)
+        });
+      }
+    }).catch(err => {
+      alert("Error in fetching data from server:", err);
+    });
   }
 
-  createCart(newCart) {
-    const newcarts = this.state.carts.slice();
-    newcarts.push(newCart);
-    this.setState({ carts: newcarts });
+  createCart(newItem) {
+    fetch('/api/items', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(newItem),
+    })
+      .then(res => {
+        if (res.ok) {
+          res.json()
+            .then(updatedItem => {
+              const newItems = this.state.items.concat(updatedItem);
+              this.setState({ items: newItem });
+            });
+        }
+        else {
+          res.json()
+            .then(error => {
+              alert('Failed to add item: ' + error.message);
+            });
+        }
+      });
   }
 
   render() {
@@ -129,10 +148,10 @@ class CartList extends React.Component {
         <h1>Place an Order</h1>
         <CartFilter />
         <hr />
-        <MenuTable carts={this.state.carts} />
+        <MenuTable items={this.state.items} />
         <hr />   
         <CartAdd createCart={this.createCart} />
-        <CartTable carts={this.state.carts} />
+        <CartTable items={this.state.items} />
         <hr />
       </div>
     );
