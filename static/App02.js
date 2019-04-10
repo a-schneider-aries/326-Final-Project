@@ -8,10 +8,6 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var carts = [{
-  item: ''
-}];
-
 var contentNode = document.getElementById("contents");
 
 var CartFilter = function (_React$Component) {
@@ -34,13 +30,25 @@ var CartFilter = function (_React$Component) {
 }(React.Component);
 
 var MenuRow = function MenuRow(props) {
-  return React.createElement("tr", null);
+  return React.createElement(
+    "tr",
+    null,
+    React.createElement(
+      "td",
+      null,
+      props.item.item
+    ),
+    React.createElement(
+      "td",
+      null,
+      props.item.price
+    )
+  );
 };
-// props.cart.item}
 
 function MenuTable(props) {
-  var CartRows = props.carts.map(function (cart) {
-    return React.createElement(MenuRow, { key: "nothing", cart: cart });
+  var CartRows = props.items.map(function (item) {
+    return React.createElement(MenuRow, { key: item._id, item: item });
   });
   return React.createElement(
     "table",
@@ -54,32 +62,12 @@ function MenuTable(props) {
         React.createElement(
           "th",
           null,
-          "Menu"
+          "Item"
         ),
         React.createElement(
           "td",
           null,
-          "Chicken"
-        ),
-        React.createElement(
-          "td",
-          null,
-          "Meat"
-        ),
-        React.createElement(
-          "td",
-          null,
-          "Goat"
-        ),
-        React.createElement(
-          "td",
-          null,
-          "Beef"
-        ),
-        React.createElement(
-          "td",
-          null,
-          "Taco"
+          "Price"
         )
       )
     ),
@@ -98,19 +86,19 @@ var CartRow = function CartRow(props) {
     React.createElement(
       "td",
       null,
-      props.cart.item
+      props.item.item
     ),
     React.createElement(
       "td",
       null,
-      props.cart.price
+      props.item.price
     )
   );
 };
 
 function CartTable(props) {
-  var CartRows = props.carts.map(function (cart) {
-    return React.createElement(CartRow, { key: cart.item, cart: cart });
+  var CartRows = props.items.map(function (item) {
+    return React.createElement(CartRow, { key: item._id, item: item });
   });
   return React.createElement(
     "table",
@@ -200,7 +188,7 @@ var CartList = function (_React$Component3) {
 
     var _this3 = _possibleConstructorReturn(this, (CartList.__proto__ || Object.getPrototypeOf(CartList)).call(this));
 
-    _this3.state = { carts: [] };
+    _this3.state = { items: [] };
 
     _this3.createCart = _this3.createCart.bind(_this3);
     return _this3;
@@ -216,18 +204,42 @@ var CartList = function (_React$Component3) {
     value: function loadData() {
       var _this4 = this;
 
-      setTimeout(function () {
-        _this4.setState({
-          carts: carts
-        });
-      }, 500);
+      fetch('/api/items').then(function (response) {
+        if (response.ok) {
+          response.json().then(function (data) {
+            console.log("Total count of records:", data._metadata.total_count);
+            _this4.setState({ items: data.records });
+          });
+        } else {
+          response.json().then(function (error) {
+            alert("Failed to fetch issues:" + error.message);
+          });
+        }
+      }).catch(function (err) {
+        alert("Error in fetching data from server:", err);
+      });
     }
   }, {
     key: "createCart",
-    value: function createCart(newCart) {
-      var newcarts = this.state.carts.slice();
-      newcarts.push(newCart);
-      this.setState({ carts: newcarts });
+    value: function createCart(newItem) {
+      var _this5 = this;
+
+      fetch('/api/items', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newItem)
+      }).then(function (res) {
+        if (res.ok) {
+          res.json().then(function (updatedItem) {
+            var newItems = _this5.state.items.concat(updatedItem);
+            _this5.setState({ items: newItem });
+          });
+        } else {
+          res.json().then(function (error) {
+            alert('Failed to add item: ' + error.message);
+          });
+        }
+      });
     }
   }, {
     key: "render",
@@ -242,10 +254,10 @@ var CartList = function (_React$Component3) {
         ),
         React.createElement(CartFilter, null),
         React.createElement("hr", null),
-        React.createElement(MenuTable, { carts: this.state.carts }),
+        React.createElement(MenuTable, { items: this.state.items }),
         React.createElement("hr", null),
         React.createElement(CartAdd, { createCart: this.createCart }),
-        React.createElement(CartTable, { carts: this.state.carts }),
+        React.createElement(CartTable, { items: this.state.items }),
         React.createElement("hr", null)
       );
     }
