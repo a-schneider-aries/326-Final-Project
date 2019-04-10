@@ -41,6 +41,11 @@ var MenuRow = function MenuRow(props) {
     React.createElement(
       "td",
       null,
+      props.item.description
+    ),
+    React.createElement(
+      "td",
+      null,
       props.item.price
     )
   );
@@ -65,6 +70,11 @@ function MenuTable(props) {
           "Item"
         ),
         React.createElement(
+          "th",
+          null,
+          "Description"
+        ),
+        React.createElement(
           "td",
           null,
           "Price"
@@ -79,7 +89,7 @@ function MenuTable(props) {
   );
 }
 
-var CartRow = function CartRows(props) {
+var CartRow = function CartRow(props) {
   return React.createElement(
     "tr",
     null,

@@ -11,12 +11,13 @@ class CartFilter extends React.Component {
 const MenuRow = (props) => (
   <tr>
     <td>{props.item.item}</td>
+    <td>{props.item.description}</td>
     <td>{props.item.price}</td>
   </tr>
 );
 
 function MenuTable(props) {
-  const CartRows = props.items.map(item => (
+  const MenuRows = props.items.map(item => (
     <MenuRow key={item._id} item={item} />
   ));
   return (
@@ -24,10 +25,11 @@ function MenuTable(props) {
       <thead>
         <tr>
           <th>Item</th>
+          <th>Description</th>
           <td>Price</td>
         </tr>
       </thead>
-      <tbody>{CartRows}</tbody>
+      <tbody>{MenuRows}</tbody>
     </table>
   );
 }
@@ -130,7 +132,7 @@ class CartList extends React.Component {
           res.json()
             .then(updatedItem => {
               const newItems = this.state.items.concat(updatedItem);
-              this.setState({ items: newItem });
+              this.setState({ items: newItems });
             });
         }
         else {
