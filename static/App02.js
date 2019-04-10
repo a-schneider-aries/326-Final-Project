@@ -47,7 +47,7 @@ var MenuRow = function MenuRow(props) {
 };
 
 function MenuTable(props) {
-  var CartRows = props.items.map(function (item) {
+  var MenuRows = props.items.map(function (item) {
     return React.createElement(MenuRow, { key: item._id, item: item });
   });
   return React.createElement(
@@ -74,7 +74,7 @@ function MenuTable(props) {
     React.createElement(
       "tbody",
       null,
-      MenuRow
+      MenuRows
     )
   );
 }
