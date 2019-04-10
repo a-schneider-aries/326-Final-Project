@@ -1,7 +1,11 @@
+<<<<<<< HEAD
 
 db = new Mongo().getDB('menu');
 
 var db = new Mongo().getDB('menu');
+=======
+db = new Mongo().getDB('menu');
+>>>>>>> ba3722dc30406afb6e279c276ab83d230b221624
 db.items.remove({});
 db.items.insertMany([
  {location: 'Bamboo', item: 'Dim Sum Platter', price: 9.00},

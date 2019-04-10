@@ -8,8 +8,6 @@ const state = [
 // This grabs the DOM element to be used to mount React components.
 var contentNode = document.getElementById("contents");
 
-
-
 class Bamboo extends React.Component {
   render() {
   return (
