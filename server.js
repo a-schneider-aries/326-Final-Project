@@ -9,6 +9,20 @@ app.use(body_parser.json());
 
 const MongoClient = require('mongodb').MongoClient;
 
+function validateIssue(issue) {
+  for (const field in issueFieldType) {
+    const type = issueFieldType[field];
+    if (!type) {
+      delete issue[field];
+    } else if (type === 'required' && !issue[field]) {
+      return `${field} is required.`;
+    }
+  }
+  if (!validIssueStatus[issue.status])
+    return `${issue.status} is not a valid status.`;
+  return null;
+}
+
 
 app.get('/api/items', (req, res) => {
   db.collection('items').find().toArray().then(items => {
@@ -26,7 +40,6 @@ app.post('/api/items', (req, res) => {
   // NEW - remove this, we now have the object ID from mongo!
   // newIssue.id = issues.length + 1;
   newItem.created = new Date();
-
 
   const err = validateIssue(newItem);
   if (err) {
