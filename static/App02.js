@@ -74,12 +74,12 @@ function MenuTable(props) {
     React.createElement(
       "tbody",
       null,
-      MenuRow
+      CartRows
     )
   );
 }
 
-var CartRow = function CartRows(props) {
+var CartRow = function CartRow(props) {
   return React.createElement(
     "tr",
     null,
