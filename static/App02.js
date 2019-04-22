@@ -242,7 +242,7 @@ var CartList = function (_React$Component3) {
         if (res.ok) {
           res.json().then(function (updatedItem) {
             var newItems = _this5.state.items.concat(updatedItem);
-            _this5.setState({ items: newItem });
+            _this5.setState({ items: newItems });
           });
         } else {
           res.json().then(function (error) {
