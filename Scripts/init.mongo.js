@@ -1,5 +1,5 @@
 db = new Mongo().getDB('menu');
-db.items.remove({location: 'cart'});
+db.items.remove({});
 db.items.insertMany([
  {location: 'Bamboo', item: 'Dim Sum Platter', description: 'Six pieces of assorted dim sum', price: 9.00},
  {location: 'Bamboo', item: 'Individual Plate', description: 'Two pieces of dim sum', price: 3.50},
