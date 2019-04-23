@@ -85,6 +85,7 @@ class Bamboo extends React.Component {
   render() {
   return (
   <div>
+	<img src="https://www.umass.edu/cp/sites/default/files/Lincoln%20Campus%20Center_Blue%20Wall_01.jpg" class="blueWallPic"/>
   <Bamboo />
   <p1>Authentic dim sum selections and hot plates.</p1>
   <hr />
@@ -115,6 +116,7 @@ class Bamboo extends React.Component {
   <Yum />
   <p10>Homemade baked goods including cookies, cakes, and French macaroons, as well as seasonal offerings.</p10>
   </div>
+  
   );
   }
  }
