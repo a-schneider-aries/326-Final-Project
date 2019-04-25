@@ -10,14 +10,14 @@ class CartFilter extends React.Component {
 
 const MenuRow = (props) => (
   <tr>
-    <td>{props.item.item}</td>
-    <td>{props.item.price}</td>
+    <td>{props.menu_item.item}</td>
+    <td>{props.menu_item.price}</td>
   </tr>
 );
 
 function MenuTable(props) {
-  const CartRows = props.items.map(item => (
-    <MenuRow key={item._id} item={item} />
+  const CartRows = props.items.map(cart_item => (
+    <MenuRow key={cart_item._id} cart_item={cart_item} />
   ));
   return (
     <table className="bordered-table">
@@ -93,7 +93,7 @@ class CartAdd extends React.Component {
 class CartList extends React.Component {
   constructor() {
     super();
-    this.state = { items: [] };
+    this.state = { cart_items: [] };
 
     this.createCart = this.createCart.bind(this);
   }
