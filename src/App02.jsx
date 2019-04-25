@@ -10,24 +10,36 @@ class CartFilter extends React.Component {
 
 const MenuRow = (props) => (
   <tr>
+<<<<<<< HEAD
     <td>{props.menu_item.item}</td>
     <td>{props.menu_item.price}</td>
+=======
+    <td>{props.item.item}</td>
+    <td>{props.item.description}</td>
+    <td>{props.item.price}</td>
+>>>>>>> 4c40f321967ed851f35e52e590ef764b25469b3d
   </tr>
 );
 
 function MenuTable(props) {
+<<<<<<< HEAD
   const CartRows = props.items.map(cart_item => (
     <MenuRow key={cart_item._id} cart_item={cart_item} />
+=======
+  const MenuRows = props.items.map(item => (
+    <MenuRow key={item._id} item={item} />
+>>>>>>> 4c40f321967ed851f35e52e590ef764b25469b3d
   ));
   return (
     <table className="bordered-table">
       <thead>
         <tr>
           <th>Item</th>
+          <th>Description</th>
           <td>Price</td>
         </tr>
       </thead>
-      <tbody>{CartRows}</tbody>
+      <tbody>{MenuRows}</tbody>
     </table>
   );
 }
@@ -130,7 +142,7 @@ class CartList extends React.Component {
           res.json()
             .then(updatedItem => {
               const newItems = this.state.items.concat(updatedItem);
-              this.setState({ items: newItem });
+              this.setState({ items: newItems });
             });
         }
         else {

@@ -301,6 +301,7 @@ var Menu = function (_React$Component11) {
       return React.createElement(
         "div",
         null,
+        React.createElement("img", { src: "https://www.umass.edu/cp/sites/default/files/Lincoln%20Campus%20Center_Blue%20Wall_01.jpg", "class": "blueWallPic" }),
         React.createElement(Bamboo, null),
         React.createElement(
           "p1",
