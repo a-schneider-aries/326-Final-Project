@@ -301,13 +301,14 @@ var Menu = function (_React$Component11) {
       return React.createElement(
         "div",
         null,
-        React.createElement("img", { src: "https://www.umass.edu/cp/sites/default/files/Lincoln%20Campus%20Center_Blue%20Wall_01.jpg", "class": "blueWallPic" }),
         React.createElement(Bamboo, null),
         React.createElement(
           "p1",
           null,
           "Authentic dim sum selections and hot plates."
         ),
+        React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/hd5981.jpg" }),
         React.createElement("hr", null),
         React.createElement(DeliDelish, null),
         React.createElement(
@@ -316,12 +317,17 @@ var Menu = function (_React$Component11) {
           "Hot and cold grinders featuring house-roasted turkey and roast beef."
         ),
         React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/deli_delish.jpg" }),
+        React.createElement("hr", null),
+        React.createElement("hr", null),
         React.createElement(GreenFields, null),
         React.createElement(
           "p3",
           null,
           "Freshly tossed salads made to-order with locally sourced ingredients."
         ),
+        React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/green_fields.jpg" }),
         React.createElement("hr", null),
         React.createElement(Grill, null),
         React.createElement(
@@ -330,12 +336,16 @@ var Menu = function (_React$Component11) {
           "Classic American fare ranging from burgers to chicken tenders to milkshakes."
         ),
         React.createElement("hr", null),
+        React.createElement("img", { src: "https://www.umass.edu/cp/sites/default/files/Lincoln%20Campus%20Center_Blue%20Wall_01.jpg" }),
+        React.createElement("hr", null),
         React.createElement(Paciugo, null),
         React.createElement(
           "p5",
           null,
-          "Traditional Italian gelato made with all-natural ingredients and real fruit."
+          "Traditional Italian gelato made with all-natural ingredients and real fruit"
         ),
+        React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/paciugo%20_resized.jpg" }),
         React.createElement("hr", null),
         React.createElement(StarGinger, null),
         React.createElement(
@@ -344,12 +354,16 @@ var Menu = function (_React$Component11) {
           "A variety of Vietnamese, Thai, and Korean specialties including pho and bibimbap."
         ),
         React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/star_ginger%20_resized.jpg" }),
+        React.createElement("hr", null),
         React.createElement(Tamales, null),
         React.createElement(
           "p7",
           null,
-          "Burritos, bowls, and salads made to-order with sustainably-harvested ingredients."
+          "Burritos, bowls, and salads made to-order with sustainably-harvested ingredients"
         ),
+        React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/tamales.jpg" }),
         React.createElement("hr", null),
         React.createElement(Tavola, null),
         React.createElement(
@@ -358,6 +372,8 @@ var Menu = function (_React$Component11) {
           "Classic Mediterranean dishes including hummus bowls, pizza, and pasta."
         ),
         React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/hd4661.jpg" }),
+        React.createElement("hr", null),
         React.createElement(Wasabi, null),
         React.createElement(
           "p9",
@@ -365,12 +381,16 @@ var Menu = function (_React$Component11) {
           "Sushi made fresh with sustainably sourced fish and a wide variety of other Japanese specialties."
         ),
         React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/wasabi.jpg" }),
+        React.createElement("hr", null),
         React.createElement(Yum, null),
         React.createElement(
           "p10",
           null,
           "Homemade baked goods including cookies, cakes, and French macaroons, as well as seasonal offerings."
-        )
+        ),
+        React.createElement("hr", null),
+        React.createElement("img", { src: "https://umassdining.com/sites/default/files/images/yum_bakery%20_resized.jpg" })
       );
     }
   }]);
