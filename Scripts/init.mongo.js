@@ -1,5 +1,6 @@
 db = new Mongo().getDB('menu');
 db.items.remove({});
+db.cart.remove({});
 db.items.insertMany([
  {location: 'Bamboo', item: 'Dim Sum Platter', description: 'Six pieces of assorted dim sum', price: 9.00},
  {location: 'Bamboo', item: 'Individual Plate', description: 'Two pieces of dim sum', price: 3.50},
@@ -52,7 +53,6 @@ db.items.createIndex({ location: 1 });
 db.items.createIndex({ item: 1 });
 db.items.createIndex({ description: 1 });
 db.items.createIndex({ price: 1 });
-db.cart.createIndex({ location: 1 });
-db.cart.createIndex({ item: 1 });
-db.cart.createIndex({ description: 1 });
-db.cart.createIndex({ price: 1 });
+
+
+

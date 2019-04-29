@@ -1,5 +1,5 @@
 
-
+import { Router, Route, hashHistory } from 'react-router';
 var contentNode = document.getElementById("contents");
 
 class CartFilter extends React.Component {
@@ -132,7 +132,7 @@ class CartList extends React.Component {
           res.json()
             .then(updatedItem => {
               const newItems = this.state.items.concat(updatedItem);
-              this.setState({ items: newItems });
+              this.setState({ item: newItems });
             });
         }
         else {
