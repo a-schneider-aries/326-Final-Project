@@ -338,12 +338,17 @@ var Menu = function (_React$Component11) {
           'Authentic dim sum selections and hot plates.'
         ),
         _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/hd5981.jpg' }),
+        _react2.default.createElement('hr', null),
         _react2.default.createElement(DeliDelish, null),
         _react2.default.createElement(
           'p2',
           null,
           'Hot and cold grinders featuring house-roasted turkey and roast beef.'
         ),
+        _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/deli_delish.jpg' }),
+        _react2.default.createElement('hr', null),
         _react2.default.createElement('hr', null),
         _react2.default.createElement(GreenFields, null),
         _react2.default.createElement(
@@ -352,6 +357,8 @@ var Menu = function (_React$Component11) {
           'Freshly tossed salads made to-order with locally sourced ingredients.'
         ),
         _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/green_fields.jpg' }),
+        _react2.default.createElement('hr', null),
         _react2.default.createElement(Grill, null),
         _react2.default.createElement(
           'p4',
@@ -359,12 +366,16 @@ var Menu = function (_React$Component11) {
           'Classic American fare ranging from burgers to chicken tenders to milkshakes.'
         ),
         _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://www.umass.edu/cp/sites/default/files/Lincoln%20Campus%20Center_Blue%20Wall_01.jpg' }),
+        _react2.default.createElement('hr', null),
         _react2.default.createElement(Paciugo, null),
         _react2.default.createElement(
           'p5',
           null,
-          'Traditional Italian gelato made with all-natural ingredients and real fruit.'
+          'Traditional Italian gelato made with all-natural ingredients and real fruit'
         ),
+        _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/paciugo%20_resized.jpg' }),
         _react2.default.createElement('hr', null),
         _react2.default.createElement(StarGinger, null),
         _react2.default.createElement(
@@ -373,12 +384,16 @@ var Menu = function (_React$Component11) {
           'A variety of Vietnamese, Thai, and Korean specialties including pho and bibimbap.'
         ),
         _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/star_ginger%20_resized.jpg' }),
+        _react2.default.createElement('hr', null),
         _react2.default.createElement(Tamales, null),
         _react2.default.createElement(
           'p7',
           null,
-          'Burritos, bowls, and salads made to-order with sustainably-harvested ingredients.'
+          'Burritos, bowls, and salads made to-order with sustainably-harvested ingredients'
         ),
+        _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/tamales.jpg' }),
         _react2.default.createElement('hr', null),
         _react2.default.createElement(Tavola, null),
         _react2.default.createElement(
@@ -387,6 +402,8 @@ var Menu = function (_React$Component11) {
           'Classic Mediterranean dishes including hummus bowls, pizza, and pasta.'
         ),
         _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/hd4661.jpg' }),
+        _react2.default.createElement('hr', null),
         _react2.default.createElement(Wasabi, null),
         _react2.default.createElement(
           'p9',
@@ -394,12 +411,16 @@ var Menu = function (_React$Component11) {
           'Sushi made fresh with sustainably sourced fish and a wide variety of other Japanese specialties.'
         ),
         _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/wasabi.jpg' }),
+        _react2.default.createElement('hr', null),
         _react2.default.createElement(Yum, null),
         _react2.default.createElement(
           'p10',
           null,
           'Homemade baked goods including cookies, cakes, and French macaroons, as well as seasonal offerings.'
-        )
+        ),
+        _react2.default.createElement('hr', null),
+        _react2.default.createElement('img', { src: 'https://umassdining.com/sites/default/files/images/yum_bakery%20_resized.jpg' })
       );
     }
   }]);
@@ -419,7 +440,13 @@ ReactDOM.render(_react2.default.createElement(RoutedApp, null), contentNode);
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
+var _react = __webpack_require__(6);
+
+var _react2 = _interopRequireDefault(_react);
+
 var _reactRouter = __webpack_require__(46);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
@@ -439,31 +466,31 @@ var CartFilter = function (_React$Component) {
   }
 
   _createClass(CartFilter, [{
-    key: "render",
+    key: 'render',
     value: function render() {
-      return React.createElement("div", null);
+      return _react2.default.createElement('div', null);
     }
   }]);
 
   return CartFilter;
-}(React.Component);
+}(_react2.default.Component);
 
 var MenuRow = function MenuRow(props) {
-  return React.createElement(
-    "tr",
+  return _react2.default.createElement(
+    'tr',
     null,
-    React.createElement(
-      "td",
+    _react2.default.createElement(
+      'td',
       null,
       props.item.item
     ),
-    React.createElement(
-      "td",
+    _react2.default.createElement(
+      'td',
       null,
       props.item.description
     ),
-    React.createElement(
-      "td",
+    _react2.default.createElement(
+      'td',
       null,
       props.item.price
     )
@@ -472,36 +499,36 @@ var MenuRow = function MenuRow(props) {
 
 function MenuTable(props) {
   var MenuRows = props.items.map(function (item) {
-    return React.createElement(MenuRow, { key: item._id, item: item });
+    return _react2.default.createElement(MenuRow, { key: item._id, item: item });
   });
-  return React.createElement(
-    "table",
-    { className: "bordered-table" },
-    React.createElement(
-      "thead",
+  return _react2.default.createElement(
+    'table',
+    { className: 'bordered-table' },
+    _react2.default.createElement(
+      'thead',
       null,
-      React.createElement(
-        "tr",
+      _react2.default.createElement(
+        'tr',
         null,
-        React.createElement(
-          "th",
+        _react2.default.createElement(
+          'th',
           null,
-          "Item"
+          'Item'
         ),
-        React.createElement(
-          "th",
+        _react2.default.createElement(
+          'th',
           null,
-          "Description"
+          'Description'
         ),
-        React.createElement(
-          "td",
+        _react2.default.createElement(
+          'td',
           null,
-          "Price"
+          'Price'
         )
       )
     ),
-    React.createElement(
-      "tbody",
+    _react2.default.createElement(
+      'tbody',
       null,
       MenuRows
     )
@@ -509,16 +536,16 @@ function MenuTable(props) {
 }
 
 var CartRow = function CartRow(props) {
-  return React.createElement(
-    "tr",
+  return _react2.default.createElement(
+    'tr',
     null,
-    React.createElement(
-      "td",
+    _react2.default.createElement(
+      'td',
       null,
       props.item.item
     ),
-    React.createElement(
-      "td",
+    _react2.default.createElement(
+      'td',
       null,
       props.item.price
     )
@@ -527,31 +554,31 @@ var CartRow = function CartRow(props) {
 
 function CartTable(props) {
   var CartRows = props.items.map(function (item) {
-    return React.createElement(CartRow, { key: item._id, item: item });
+    return _react2.default.createElement(CartRow, { key: item._id, item: item });
   });
-  return React.createElement(
-    "table",
-    { className: "bordered-table" },
-    React.createElement(
-      "thead",
+  return _react2.default.createElement(
+    'table',
+    { className: 'bordered-table' },
+    _react2.default.createElement(
+      'thead',
       null,
-      React.createElement(
-        "tr",
+      _react2.default.createElement(
+        'tr',
         null,
-        React.createElement(
-          "th",
+        _react2.default.createElement(
+          'th',
           null,
-          "Item"
+          'Item'
         ),
-        React.createElement(
-          "th",
+        _react2.default.createElement(
+          'th',
           null,
-          "Price"
+          'Price'
         )
       )
     ),
-    React.createElement(
-      "tbody",
+    _react2.default.createElement(
+      'tbody',
       null,
       CartRows
     )
@@ -571,7 +598,7 @@ var CartAdd = function (_React$Component2) {
   }
 
   _createClass(CartAdd, [{
-    key: "handleSubmit",
+    key: 'handleSubmit',
     value: function handleSubmit(e) {
       e.preventDefault();
       var form = document.forms.cartAdd;
@@ -586,20 +613,20 @@ var CartAdd = function (_React$Component2) {
       form.price.value = '';
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
-      return React.createElement(
-        "div",
+      return _react2.default.createElement(
+        'div',
         null,
-        React.createElement(
-          "form",
-          { name: "cartAdd", onSubmit: this.handleSubmit },
-          React.createElement("input", { type: "text", name: "item", placeholder: "Item" }),
-          React.createElement("input", { type: "text", name: "price", placeholder: "Price" }),
-          React.createElement(
-            "button",
+        _react2.default.createElement(
+          'form',
+          { name: 'cartAdd', onSubmit: this.handleSubmit },
+          _react2.default.createElement('input', { type: 'text', name: 'item', placeholder: 'Item' }),
+          _react2.default.createElement('input', { type: 'text', name: 'price', placeholder: 'Price' }),
+          _react2.default.createElement(
+            'button',
             null,
-            "Add"
+            'Add'
           )
         )
       );
@@ -607,7 +634,7 @@ var CartAdd = function (_React$Component2) {
   }]);
 
   return CartAdd;
-}(React.Component);
+}(_react2.default.Component);
 
 var CartList = function (_React$Component3) {
   _inherits(CartList, _React$Component3);
@@ -624,12 +651,12 @@ var CartList = function (_React$Component3) {
   }
 
   _createClass(CartList, [{
-    key: "componentDidMount",
+    key: 'componentDidMount',
     value: function componentDidMount() {
       this.loadData();
     }
   }, {
-    key: "loadData",
+    key: 'loadData',
     value: function loadData() {
       var _this4 = this;
 
@@ -649,7 +676,7 @@ var CartList = function (_React$Component3) {
       });
     }
   }, {
-    key: "createCart",
+    key: 'createCart',
     value: function createCart(newItem) {
       var _this5 = this;
 
@@ -671,34 +698,34 @@ var CartList = function (_React$Component3) {
       });
     }
   }, {
-    key: "render",
+    key: 'render',
     value: function render() {
-      return React.createElement(
-        "div",
+      return _react2.default.createElement(
+        'div',
         null,
-        React.createElement(
-          "h1",
+        _react2.default.createElement(
+          'h1',
           null,
-          "Place an Order"
+          'Place an Order'
         ),
-        React.createElement(CartFilter, null),
-        React.createElement("hr", null),
-        React.createElement(MenuTable, { items: this.state.items }),
-        React.createElement("hr", null),
-        React.createElement(CartAdd, { createCart: this.createCart }),
-        React.createElement(CartTable, { items: this.state.items }),
-        React.createElement("hr", null)
+        _react2.default.createElement(CartFilter, null),
+        _react2.default.createElement('hr', null),
+        _react2.default.createElement(MenuTable, { items: this.state.items }),
+        _react2.default.createElement('hr', null),
+        _react2.default.createElement(CartAdd, { createCart: this.createCart }),
+        _react2.default.createElement(CartTable, { items: this.state.items }),
+        _react2.default.createElement('hr', null)
       );
     }
   }]);
 
   return CartList;
-}(React.Component);
+}(_react2.default.Component);
 
 // This renders the JSX component inside the content node:
 
 
-ReactDOM.render(React.createElement(CartList, null), contentNode);
+ReactDOM.render(_react2.default.createElement(CartList, null), contentNode);
 
 /***/ })
 
