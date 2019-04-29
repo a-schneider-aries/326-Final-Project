@@ -4,10 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile2": "babel src --presets react,es2015 --out-dir static",
-    "compile": "webpack",
-    "watch2": "babel src --presets react,es2015 --out-dir static --watch",
-    "watch": "webpack --watch",
+    "compile": "babel src --presets react,es2015 --out-dir static",
+    "watch": "babel src --presets react,es2015 --out-dir static --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -15,21 +13,12 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongodb": "^3.2.3",
-    "webpack": "^3.8.1"
+    "mongodb": "^3.2.3"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-loader": "^6.2.5",
-    "babel-polyfill": "^6.13.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
-    "eslint": "^5.9.0",
-    "isomorphic-fetch": "^2.2.1",
-    "nodemon": "^1.18.10",
-    "react": "^15.3.1",
-    "react-dom": "^15.3.1",
-    "react-router": "^2.8.1",
-    "webpack": "^3.8.1"
+    "eslint": "^5.15.3"
   }
 }

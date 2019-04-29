@@ -2,14 +2,13 @@
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-var _reactRouter = require("react-router");
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // //import { pbkdf2 } from "crypto";
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+// //import { pbkdf2 } from "crypto";
 
 // This is a place holder for the initial application state.
 var state = [];
@@ -33,8 +32,8 @@ var Bamboo = function (_React$Component) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p11",
+          null,
           "Bamboo"
         )
       );
@@ -60,8 +59,8 @@ var DeliDelish = function (_React$Component2) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p12",
+          null,
           "Deli Delish"
         )
       );
@@ -87,8 +86,8 @@ var GreenFields = function (_React$Component3) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p13",
+          null,
           "Green Fields"
         )
       );
@@ -114,8 +113,8 @@ var Grill = function (_React$Component4) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p14",
+          null,
           "The Grill"
         )
       );
@@ -141,8 +140,8 @@ var Paciugo = function (_React$Component5) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p15",
+          null,
           "Paciugo"
         )
       );
@@ -168,8 +167,8 @@ var StarGinger = function (_React$Component6) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p16",
+          null,
           "Star Ginger"
         )
       );
@@ -195,8 +194,8 @@ var Tamales = function (_React$Component7) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p17",
+          null,
           "Tamales"
         )
       );
@@ -222,8 +221,8 @@ var Tavola = function (_React$Component8) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p18",
+          null,
           "Tavola"
         )
       );
@@ -249,8 +248,8 @@ var Wasabi = function (_React$Component9) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p19",
+          null,
           "Wasabi"
         )
       );
@@ -276,8 +275,8 @@ var Yum = function (_React$Component10) {
         "div",
         null,
         React.createElement(
-          _reactRouter.Link,
-          { to: "/App02" },
+          "p20",
+          null,
           "Yum! Bakery"
         )
       );

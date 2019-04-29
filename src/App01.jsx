@@ -1,21 +1,9 @@
 // //import { pbkdf2 } from "crypto";
-import React from 'react';
-import { Router, Route, hashHistory, withRouter, IndexRoute, Link } from 'react-router';
 
-import CartList from "./App02.jsx";
 // This is a place holder for the initial application state.
 const state = [
 
 ];
-
-const RoutedApp = () => (
-  <Router history={hashHistory} >
-    {/* <Redirect from="/" to="/issues" /> - replaced this with the Dashboard component */}
-    <Route path="/" component={Menu} >
-      <IndexRoute component={Menu} />
-      <Route path="/App02" component={withRouter(CartList)} />
-    </Route>
-  </Router>);
 
 // This grabs the DOM element to be used to mount React components.
 var contentNode = document.getElementById("contents");
@@ -24,7 +12,7 @@ class Bamboo extends React.Component {
   render() {
   return (
     <div>
-  <Link to="/App02">Bamboo</Link>
+  <p11>Bamboo</p11>
   </div>
   )
   }
@@ -32,7 +20,7 @@ class Bamboo extends React.Component {
  class DeliDelish extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Deli Delish</Link></div>
+  <div><p12>Deli Delish</p12></div>
   )
   }
  }
@@ -40,56 +28,56 @@ class Bamboo extends React.Component {
  class GreenFields extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Green Fields</Link></div>
+  <div><p13>Green Fields</p13></div>
   )
   }
  }
  class Grill extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">The Grill</Link></div>
+  <div><p14>The Grill</p14></div>
   )
   }
  }
  class Paciugo extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Paciugo</Link></div>
+  <div><p15>Paciugo</p15></div>
   )
   }
  }
  class StarGinger extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Star Ginger</Link></div>
+  <div><p16>Star Ginger</p16></div>
   )
   }
  }
  class Tamales extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Tamales</Link></div>
+  <div><p17>Tamales</p17></div>
   )
   }
  }
  class Tavola extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Tavola</Link></div>
+  <div><p18>Tavola</p18></div>
   )
   }
  }
  class Wasabi extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Wasabi</Link></div>
+  <div><p19>Wasabi</p19></div>
   )
   }
  }
  class Yum extends React.Component {
   render() {
   return (
-  <div><Link to="/App02">Yum! Bakery</Link></div>
+  <div><p20>Yum! Bakery</p20></div>
   )
   }
  }
@@ -153,4 +141,4 @@ class Bamboo extends React.Component {
   );
   }
  }
- ReactDOM.render(<RoutedApp />, contentNode); 
+ ReactDOM.render(<Menu />, contentNode); 

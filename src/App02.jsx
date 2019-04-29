@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 import React from 'react';
 import { Router, Route, hashHistory } from 'react-router';
+=======
+
+
+>>>>>>> ded31f7b48a80f45bbf2d900207327a8e0fe7d8f
 var contentNode = document.getElementById("contents");
 
 class CartFilter extends React.Component {
@@ -13,10 +18,11 @@ const MenuRow = (props) => (
     <td>{props.item.item}</td>
     <td>{props.item.description}</td>
     <td>{props.item.price}</td>
-  </tr>
-);
-
-function MenuTable(props) {
+>>>>>>> 4c40f321967ed851f35e52e590ef764b25469b3d
+<<<<<<< HEAD
+  const CartRows = props.items.map(cart_item => (
+    <MenuRow key={cart_item._id} cart_item={cart_item} />
+=======
   const MenuRows = props.items.map(item => (
     <MenuRow key={item._id} item={item} />
   ));
@@ -95,7 +101,7 @@ class CartAdd extends React.Component {
 class CartList extends React.Component {
   constructor() {
     super();
-    this.state = { items: [] };
+    this.state = { cart_items: [] };
 
     this.createCart = this.createCart.bind(this);
   }
@@ -132,7 +138,7 @@ class CartList extends React.Component {
           res.json()
             .then(updatedItem => {
               const newItems = this.state.items.concat(updatedItem);
-              this.setState({ item: newItems });
+              this.setState({ items: newItems });
             });
         }
         else {

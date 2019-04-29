@@ -8,6 +8,20 @@ app.use(bodyParser.json());
 
 const MongoClient = require('mongodb').MongoClient;
 
+function validateIssue(issue) {
+  for (const field in issueFieldType) {
+    const type = issueFieldType[field];
+    if (!type) {
+      delete issue[field];
+    } else if (type === 'required' && !issue[field]) {
+      return `${field} is required.`;
+    }
+  }
+  if (!validIssueStatus[issue.status])
+    return `${issue.status} is not a valid status.`;
+  return null;
+}
+
 
 app.get('/api/items', (req, res) => {
   db.collection('items').find().toArray().then(items => {
@@ -23,8 +37,6 @@ app.get('/api/items', (req, res) => {
 app.post('/api/items', (req, res) => {
   const newItem = req.body;
 
-
-  
   db.collection('items').insertOne(newItem).then(result =>
     db.collection('items').find({ _id: result.insertedId }).limit(1).next()
   ).then(newItem => {

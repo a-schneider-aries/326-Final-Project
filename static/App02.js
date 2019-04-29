@@ -36,24 +36,33 @@ var MenuRow = function MenuRow(props) {
     React.createElement(
       "td",
       null,
-      props.item.item
+      props.menu_item.item
     ),
     React.createElement(
       "td",
       null,
+<<<<<<< HEAD
+      props.menu_item.price
+=======
       props.item.description
     ),
     React.createElement(
       "td",
       null,
       props.item.price
+>>>>>>> 4c40f321967ed851f35e52e590ef764b25469b3d
     )
   );
 };
 
 function MenuTable(props) {
+<<<<<<< HEAD
+  var CartRows = props.items.map(function (cart_item) {
+    return React.createElement(MenuRow, { key: cart_item._id, cart_item: cart_item });
+=======
   var MenuRows = props.items.map(function (item) {
     return React.createElement(MenuRow, { key: item._id, item: item });
+>>>>>>> 4c40f321967ed851f35e52e590ef764b25469b3d
   });
   return React.createElement(
     "table",
@@ -84,7 +93,11 @@ function MenuTable(props) {
     React.createElement(
       "tbody",
       null,
+<<<<<<< HEAD
+      CartRows
+=======
       MenuRows
+>>>>>>> 4c40f321967ed851f35e52e590ef764b25469b3d
     )
   );
 }
@@ -198,7 +211,7 @@ var CartList = function (_React$Component3) {
 
     var _this3 = _possibleConstructorReturn(this, (CartList.__proto__ || Object.getPrototypeOf(CartList)).call(this));
 
-    _this3.state = { items: [] };
+    _this3.state = { cart_items: [] };
 
     _this3.createCart = _this3.createCart.bind(_this3);
     return _this3;
