@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Eat UMass</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-polyfill/6.13.0/polyfill.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.2.1/react-dom.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fetch/1.0.0/fetch.min.js">
+    </script>
+    <style>
+        h1{
+            color: maroon;
+        }
+        body{
+            background-color:silver;
+        }
+        table.bordered-table th,
+        td {
+            border: 1px solid silver;
+            padding: 4px;
+        }
+
+        table.bordered-table {
+            border-collapse: collapse
+        }
+        p1{
+            color: black;
+            size: 14px;
+        }
+        p2{
+            color: black;
+            size: 14px;
+        }
+        p3{
+            color: black;
+            size: 14px;
+        }
+        p4{
+            color: black;
+            size: 14px;
+        }
+        p5{
+            color: black;
+            size: 14px;
+        }
+        p6{
+            color: black;
+            size: 14px;
+        }
+        p7{
+            color: black;
+            size: 14px;
+        }
+        p8{
+            color: black;
+            size: 14px;
+        }
+        p9{
+            color: black;
+            size: 14px;
+        }
+        p10{
+            color: black;
+            size: 14px;
+        }
+        p11{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p12{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p13{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p14{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p15{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p16{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p17{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p18{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p19{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        p20{
+            color: maroon;
+            font-size: 16px;
+            font-weight: bold;
+        }
+        img{
+            /* border-radius: 8px; */
+            border-radius: 8px;
+            width: 300px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" 
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" 
+    crossorigin="anonymous">
+</head>
+
+<body style = "background-color: silver">
+    <h1 style = "color:maroon; padding-left: 600px;"> Eat UMass</h1>
+    <!-- <img src="https://www.umass.edu/cp/sites/default/files/Lincoln%20Campus%20Center_Blue%20Wall_01.jpg" 
+    style = " border-radius: 8px; flow:right;"
+    /> -->
+
+    <ul>
+        <li style = "color:maroon; font-size:20px"><a href="/view02.html">Place An Order</a></li>
+    </ul>
+    <img scr="https://dailycollegian.com/wp-content/uploads/2018/04/innerdemons-900x841.jpg">
+    <div id="contents"></div>
+    <script src="vendor.bundle.js"></script>
+    <script src="app.bundle.js"></script>
+    
+</body>
+
+</html>
