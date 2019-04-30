@@ -53,13 +53,4 @@ db.items.createIndex({ location: 1 });
 db.items.createIndex({ item: 1 });
 db.items.createIndex({ description: 1 });
 db.items.createIndex({ price: 1 });
-<<<<<<< HEAD
 
-
-
-=======
-db.cart.createIndex({ location: 1 });
-db.cart.createIndex({ item: 1 });
-db.cart.createIndex({ description: 1 });
-db.cart.createIndex({ price: 1 });
->>>>>>> ce9daf54a23beb881748a7160c1cd5a328565c3e
